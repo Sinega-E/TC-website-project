@@ -80,7 +80,7 @@ input, textarea, select {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+ 
     padding: 1rem 0;
     background-color: var(--bg-color);
     flex-wrap: wrap;
@@ -181,7 +181,9 @@ input, textarea, select {
     /* THIS creates the animation! */
     transition: transform 1s;
   }
-  
+  .slide--3{
+    background-image: url('./logo.png');
+  }
   .slide > img {
     /* Only for images that have different size than slide */
     width: 100%;
