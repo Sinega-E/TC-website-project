@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="responsive.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     <script defer src="script.js"></script>
     <title>Talky Community</title>
 </head>
@@ -12,7 +13,11 @@
     
     <!-- NAVIGATION -->
     <section class="container-header">
+        <button class="hamburger" aria-label="Toggle Navigation Menu">
+            <i class="fi fi-br-menu-burger menu-burger"></i>
+        </button>
             <img class="logoImg" src="./logo.png" alt="Training Center Logo" aria-label="Logo">
+            
             <div class="header">
             <nav>
                 <ul class="nav-links">
@@ -26,50 +31,53 @@
                 <button class="btn login-btn" aria-label="Log In to Your Account">Log In</button>
             </div>
         </div>
+        <div class="hamburger-login-container">
+            <button class="btn login-btn" aria-label="Log In to Your Account">Log In</button>
+        </div>
+      
     </section>
-    
-    <!-- SLIDERS -->
-    <section class="container section__title--slide" aria-label="Image Sliders">
-        <div class="parent-slider">
-            <div class="child-slide slide--1">
-              <div class="slide-content">
-                <h5 class="slide__header">Affordable Course Packages</h5>
+  
+<!-- SLIDERS -->
+<section class="section__title--slide" aria-label="Image Sliders">
+    <div class="parent-slider">
+        <!-- Slide 1 -->
+        <div class="child-slide slide--1">
+            <div class="slide-content">
+                <h5 class="slide__header slide__header-1">Affordable Course Packages</h5>
                 <blockquote class="slide__text">
                     Learn without breaking the bank! Explore our diverse course packages designed to fit all budgets. Quality education at an affordable price for everyone.
                 </blockquote>
-              </div>
             </div>
-    
-            <div class="child-slide slide--2">
-              <div class="slide-content">
-                <h5 class="slide__header">
-                    Flexible Scheduling
-                </h5>
-                <blockquote class="slide__text">
+            <img class="slider-img" src="./assets/slider-img-1.png" alt="">
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="child-slide slide--2">
+            <div class="slide-content">
+                <h5 class="slide__header slide__header-2">Flexible Scheduling</h5>
+                <blockquote class="slide__text slide__text-2">
                     Your schedule, your choice! Book a demo session and select a trainer who fits your needs. Classes are available at times that work best for you.
                 </blockquote>
-                
-              </div>
             </div>
-    
-            <div class="child-slide slide--3">
-              <div class="slide-content">
-                <h5 class="slide__header">
-                  Finally free from old-school banks
-                </h5>
-                <blockquote class="slide__text">
-                    We're here for you every step of the way. Whether it's for consultations, questions, or refunds, contact us anytime for quick and helpful support.
-                </blockquote>
-              </div>
-            </div>
-    
-            <button class="slider__btn slider__btn--left">&larr;</button>
-            <button class="slider__btn slider__btn--right">&rarr;</button>
-            <div class="dots"></div>
-          </div>
+            <img class="slider-img" src="./assets/slider-img-2.png" alt="">
+        </div>
 
-    </section>
-    
+        <!-- Slide 3 -->
+        <div class="child-slide slide--3">
+            <div class="slide-content">
+                <h5 class="slide__header slide__header-3">Finally free from old-school banks</h5>
+                <p class="slide__text">
+                    We're here for you every step of the way. Whether it's for consultations, questions, or refunds, contact us anytime for quick and helpful support.
+                </p>
+            </div>
+            <img class="slider-img" src="./assets/slider-img-3.png" alt="">
+        </div>
+    </div>
+    <div class="dots" aria-label="Slider Navigation Dots"></div>
+    </div>
+</section>
+
+<!-- ------------------------------------------------------------------ -->
     <!-- Course Section -->
     <section class="courses">
         <div class="container">

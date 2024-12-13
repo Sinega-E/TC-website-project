@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
 
 :root {
     /* Base Colors */
@@ -8,19 +7,19 @@
     --tertiary-color: #ff585f; /* A soft red for contrast */
     
     /* Darker Variations */
-    --primary-color-darker: #ffa617; /* Darker Orange */
+    --primary-color-darker: #fa9a00; /* Darker Orange */
     --secondary-color-darker: #36256a; /* Darker Purple */
     --tertiary-color-darker: #c84a54; /* Darker Red */
     
     /* Transparent Variations */
-    --primary-color-opacity: #eb94003a; /* Transparent Orange */
+    --primary-color-opacity: #ffa30564; /* Transparent Orange */
     --secondary-color-opacity: #44308933; /* Transparent Purple */
     --tertiary-color-opacity: #ff585f2d; /* Transparent Red */
     
     /* Gradients */
     --gradient-primary: linear-gradient(to top left, #eb9400, #ffcb03); /* Orange to Yellow */
     --gradient-secondary: linear-gradient(to top left, #443089, #6a4cd4); /* Purple to Lavender */
-  
+    --gradient-bg:linear-gradient(to top left, #ffcb03, #6a4cd4)
     /* Additional Colors */
     --bg-color: #f4f4f4; /* Light Gray Background */
     --text-color: #333333; /* Dark Text Color */
@@ -30,7 +29,7 @@
 /* Body Text */
 body {
     font-family: "Quicksand", sans-serif; 
-    background-color: var(--bg-color);
+    background-color:#fffefa;
     color: var(--text-color);
     margin: 0;
 }
@@ -50,7 +49,7 @@ p {
 }
 
 /* Headings*/
-h2 {
+h2{
     font-family: "Quicksand", sans-serif; 
     color: var(--primary-color);
     font-size: 1.8rem;
@@ -80,7 +79,6 @@ input, textarea, select {
     display: flex;
     align-items: center;
     justify-content: space-between;
- 
     padding: 1rem 0;
     background-color: var(--bg-color);
     flex-wrap: wrap;
@@ -88,15 +86,39 @@ input, textarea, select {
 
 /* Container Header */
 .container-header {
+  max-width: 100%;
     gap: 2rem;
     display: flex;
     box-shadow: 0 0.2rem 0.5rem var(--shadow-color);
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 0.5rem 2rem;
+    padding: 1rem 0rem;
+    
+}
+.login-container{
+  margin-right: 1rem;
+}
+.hamburger {
+  display: none; /* Hide initially */
+  background: none;
+  border: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+  order: 0; /* Show on the left in mobile view */
 }
 
+.menu-burger {
+  margin-left: 1rem;
+  font-size: 2rem;
+  color: var(--primary-color-darker);
+  transition: all 0.3s ease;
+}
+
+.hamburger-login-container{
+  display: none; 
+}
 /* Container */
 .container {
     margin: 0 auto;
@@ -105,6 +127,7 @@ input, textarea, select {
 
 /* Logo */
 .logoImg {
+  padding:0.5rem 1rem ;
     max-height: 4rem;
     width: auto;
 }
@@ -156,130 +179,103 @@ input, textarea, select {
 /* --------------------------------------------------------------------------------------------------------------------------------- */
 /* Slider Styles */
 
-
-/* SLIDER */
+/* Slider Container */
 .parent-slider {
-    max-width: 100rem;
-    height: 50rem;
-    margin: 0 auto;
-    position: relative;
-  
-    /* IN THE END */
-    overflow: hidden;
-  }
-  
-  .child-slide {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 50rem;
-  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  
-    /* THIS creates the animation! */
-    transition: transform 1s;
-  }
-  .slide--3{
-    background-image: url('./logo.png');
-  }
-  .slide > img {
-    /* Only for images that have different size than slide */
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .slider__btn {
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-  
-    border: none;
-    background: rgba(255, 255, 255, 0.7);
-    font-family: inherit;
-    color: #333;
-    border-radius: 50%;
-    height: 5.5rem;
-    width: 5.5rem;
-    font-size: 3.25rem;
-    cursor: pointer;
-  }
-  
-  .slider__btn--left {
-    left: 6%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .slider__btn--right {
-    right: 6%;
-    transform: translate(50%, -50%);
-  }
-  
-  .dots {
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-  }
-  
-  .dots__dot {
-    border: none;
-    background-color: #b9b9b9;
-    opacity: 0.7;
-    height: 1rem;
-    width: 1rem;
-    border-radius: 50%;
-    margin-right: 1.75rem;
-    cursor: pointer;
-    transition: all 0.5s;
-  
-    /* Only necessary when overlying images */
-    /* box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.7); */
-  }
-  
-  .dots__dot:last-child {
-    margin: 0;
-  }
-  
-  .dots__dot--active {
-    /* background-color: #fff; */
-    background-color: #888;
-    opacity: 1;
-  }
-  
-  /* slide */
-  .child-slide {
-    width: 65%;
-    position: relative;
-  }
-  
-  .child-slide::before {
-    content: '\201C';
-    position: absolute;
-    top: -5.7rem;
-    left: -6.8rem;
-    line-height: 1;
-    font-size: 20rem;
-    font-family: inherit;
-    color: var(--color-primary);
-    z-index: -1;
-  }
-  
-  .slide__header {
-    font-size: 2.25rem;
-    font-weight: 500;
-    margin-bottom: 1.5rem;
-  }
-  
-  .slide__text {
-    font-size: 1.7rem;
-    margin-bottom: 3.5rem;
-    color: #666;
-  }
+  width: 100%; /* Full width */
+  height: 50rem;
+  position: relative;
+  overflow: hidden;
+  margin-top: 0; /* Pulls slider up under the navigation for seamless integration */
+  z-index: -1;
+  padding: 0;
+}
 
+/* Individual Slides */
+.child-slide {
+  position: absolute;
+  width: 100%;
+  height: 55%; /* Ensure slides fill the slider height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 1s ease-in-out;
+  background-size: cover; /* Ensures background image covers the slide */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Prevents tiling of the image */
+}
+
+/* Slide Content */
+.slide-content {
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 40rem;
+  background: rgba(255, 255, 255, 1); /* Semi-transparent background for readability */
+  border-radius: 20rem;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  */
+  text-align: center;
+}
+.slider-img{
+  height: 20rem;
+}
+.child-slide {
+  background-image: url('./assets/slider-bg-image.jpg');
+}
+
+
+.slide__header {
+  color: var(--primary-color-darker);
+  font-family:"Poppins", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  
+}
+.slide__header-2{
+  color: var(--secondary-color);
+}
+
+.slide__text {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--secondary-color);
+  line-height: 1.6;
+}
+.slide__text-2{
+  color: var(--primary-color-darker);
+}
+
+/* Dots */
+.dots {
+  position: absolute;
+  left: 50%;
+  top: 36rem;
+
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+}
+
+.dots__dot {
+  border: none;
+  background-color: var(--primary-color-opacity);
+  opacity: 0.7;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition:all 0.3s ease-in-out;
+}
+
+.dots__dot:hover {
+  transform: scale(1.2);
+  background-color: var(--primary-color-darker);
+}
+
+.dots__dot--active {
+  background-color: var(--primary-color-darker);
+  opacity: 1;
+}
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
 /* Course Section */
 .courses {

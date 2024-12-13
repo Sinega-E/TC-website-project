@@ -2,6 +2,7 @@
     .header {
         flex-wrap: nowrap; 
     }
+ 
     /* Navigation Links */
     .nav-links {
          text-align: center;
@@ -37,20 +38,68 @@
         width: 100%;
         text-align: center;
     }
-   
+    .hamburger-login-container{
+        display: block; 
+        margin-right: 1rem;
+      }
+    .container-header{
+        flex-direction: row;
+    }
+    .header{
+        display: none;
+    }
+    .hamburger{
+        display: flex;
+    }
+
+    
+    /* Adjusting the height of the slider for smaller screens */
+    .parent-slider {
+      height: 48rem; /* Decrease the height of the slider */
+    }
+  
+    /* Resize the slide content */
+    .slide-content {
+      max-width: 30rem;
+      padding: 1rem; /* Reduce padding */
+    }
+  
+    /* Resize the text */
+    .slide__header {
+      font-size: 2.3rem; /* Smaller font size */
+    }
+  
+    .slide__text {
+      font-size: 1rem; /* Smaller text for mobile */
+    }
+  
+    /* Image adjustments */
+    .slider-img {
+      height: auto; /* Make the image height adjust automatically */
+      max-height: 15rem; /* Adjust max-height of the image */
+    }
+  
+    /* Adjust the dot positioning */
+    .dots {
+        top:36rem;
+      }
 
 }
 
 /* Mobile View (Max Width: 480px) */
 @media screen and (max-width: 480px) {
-    /* Logo */
-    .logoImg {
-        max-height: 4rem;
+
+    .login-btn{
+        font-size: 1rem;
+        padding: 0.5rem 1.5rem;
     }
     /* Navigation */
     .nav-links {
         flex-direction: column;
         gap: 1.2rem;
+    }
+    .container-header{
+        max-width: 100%;
     }
     .header {
         padding: 1rem;
@@ -63,5 +112,163 @@
         width: 100%;
         text-align: center;
     }
+    .dots{
+        top: 35rem;
+    }
 
 }
+/* ------------------------------------------------- */
+
+/* Responsive Styles */
+@media (max-width: 1135px) {
+    .parent-slider {
+        height: 50rem; /* Decrease the height of the slider */
+      }
+    
+      /* Resize the slide content */
+      .slide-content {
+        max-width: 30rem;
+        padding: 1rem; /* Reduce padding */
+      }
+    
+      /* Resize the text */
+      .slide__header {
+        font-size: 2.4rem; /* Smaller font size */
+      }
+    
+      .slide__text {
+        font-size: 1.1rem; /* Smaller text for mobile */
+      }
+    
+      /* Image adjustments */
+      .slider-img {
+        height: auto; /* Make the image height adjust automatically */
+        max-height: 15rem; /* Adjust max-height of the image */
+      }
+    
+      /* Adjust the dot positioning */
+      .dots {
+        top:36rem;
+      }
+    
+}
+
+  @media (max-width: 700px){
+    .parent-slider {
+        height: 52rem; /* Decrease the height of the slider */
+      }
+    
+      /* Resize the slide content */
+      .slide-content {
+        max-width: 45rem;
+        padding: 1rem; /* Reduce padding */
+      }
+    
+      /* Resize the text */
+      .slide__header {
+        padding: 0;
+        font-size: 2rem; /* Smaller font size */
+      }
+    
+      .slide__text {
+        padding: 0;
+        font-size: 0.9rem; /* Smaller text for mobile */
+      }
+    
+      /* Image adjustments */
+      .slider-img {
+        height: auto; /* Make the image height adjust automatically */
+        max-height: 10rem; /* Adjust max-height of the image */
+      }
+      .dots{
+        top:37rem;
+      }
+    
+
+  }
+  @media (max-width: 460px) {
+    .parent-slider {
+        height: 63rem; /* Decrease the height of the slider */
+      }
+    
+      /* Resize the slide content */
+      .slide-content {
+      
+        padding: 1.5rem; /* Reduce padding */
+      }
+    
+      /* Resize the text */
+      .slide__header {
+        padding: 0;
+        font-size: 1.8rem; /* Smaller font size */
+      }
+    
+      .slide__text {
+        padding: 0;
+        font-size: 0.8rem; /* Smaller text for mobile */
+      }
+    
+      /* Image adjustments */
+      .slider-img {
+        height: auto; /* Make the image height adjust automatically */
+        max-height: 10rem; /* Adjust max-height of the image */
+      }
+
+      .dots{
+        top: 43rem;
+      }
+    
+  }
+  @media (max-width: 430px){
+  .logoImg{
+    max-height: 3rem;
+  }
+  .child-slide{
+    flex-direction: column;
+  }
+
+
+  }
+  @media (max-width: 320px){
+    .logoImg {
+        max-height: 2rem;
+        width: auto;
+    }
+    .login-btn{
+        font-size: 1rem;
+    }
+    .parent-slider {
+        height: 68rem; /* Decrease the height of the slider */
+      }
+    
+      /* Resize the slide content */
+      .slide-content {
+        max-width: 50rem;
+        padding: 1rem; /* Reduce padding */
+      }
+    
+      /* Resize the text */
+      .slide__header {
+        padding: 0;
+        font-size: 2rem; /* Smaller font size */
+      }
+    
+      .slide__text {
+        padding: 0;
+        font-size: 1rem; /* Smaller text for mobile */
+      }
+    
+      /* Image adjustments */
+      .slider-img {
+        height: auto; /* Make the image height adjust automatically */
+        max-height: 10rem; /* Adjust max-height of the image */
+      }
+    .child-slide{
+        flex-direction: column;
+      }
+  }
+
+
+
+
+  /* ------------------------------------ */
