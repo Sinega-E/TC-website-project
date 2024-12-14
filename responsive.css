@@ -1,9 +1,36 @@
+@media (max-width: 1135px) {
+  .parent-slider {
+      height: 50rem;
+    }
+    .slide-content {
+      max-width: 30rem;
+      padding: 1rem; 
+    }
+    .slide__header {
+      line-height: 3rem;
+      padding: 0 ;
+      font-size: 2.8rem; 
+    }
+    .slide__text {
+      line-height: 1.8rem;
+      padding: 0 ;
+      font-size: 1.2rem; 
+    }
+
+    .slider-img {
+      height: auto; 
+      max-height: 15rem; 
+    }
+    .dots {
+      top:34rem;
+    }
+  
+}
 @media screen and (max-width: 1050px){
     .header {
         flex-wrap: nowrap; 
     }
- 
-    /* Navigation Links */
+
     .nav-links {
          text-align: center;
         gap: 1.5rem;
@@ -17,12 +44,11 @@
         padding: 0.5rem 1rem;
     }
 }
-/* Tablet View (Max Width: 768px) */
+
 @media screen and (max-width: 768px) {
     .container-header{
         flex-direction: column;
     }
-    /* Navigation */
     .header {
         flex-direction: column;
         align-items: center;
@@ -44,7 +70,7 @@
       }
     .container-header{
       padding: 0;
-        flex-direction: row;
+      flex-direction: row;
     }
     .header{
         display: none;
@@ -52,49 +78,73 @@
     .hamburger{
         display: flex;
     }
-
-    
-    /* Adjusting the height of the slider for smaller screens */
     .parent-slider {
-      height: 48rem; /* Decrease the height of the slider */
+      height: 48rem; 
     }
-  
-    /* Resize the slide content */
     .slide-content {
       max-width: 30rem;
-      padding: 1rem; /* Reduce padding */
+      padding: 1rem; 
     }
-  
-    /* Resize the text */
-    .slide__header {
-      font-size: 2.3rem; /* Smaller font size */
+     .slide__header {
+      font-size: 2.6rem; 
     }
-  
     .slide__text {
-      font-size: 1rem; /* Smaller text for mobile */
+      font-size: 1.1rem; 
     }
-  
-    /* Image adjustments */
     .slider-img {
-      height: auto; /* Make the image height adjust automatically */
-      max-height: 15rem; /* Adjust max-height of the image */
+      height: auto; 
+      max-height: 15rem; 
     }
-  
-    /* Adjust the dot positioning */
     .dots {
-        top:36rem;
+        top:33rem;
       }
-
 }
-
-/* Mobile View (Max Width: 480px) */
+@media (max-width: 700px){
+  .hamburger-login-container{
+    display: none;
+  }
+  .parent-slider {
+      height: 52rem; 
+    }
+    .slide-content {
+      max-width: 45rem;
+      padding: 1rem; 
+    }
+    .slider-img {
+      height: auto; 
+      max-height: 10rem;
+    }
+    .dots{
+      top:35rem;
+    }
+  }
+@media (max-width: 580px) {
+  .menu-burger {
+    font-size: 1.6rem;
+  }
+    .child-slide{
+      flex-direction: column;
+    }
+    .slide-content{
+      padding: 0;
+    }
+    .slide__header {
+      font-size: 2.6rem; 
+    }
+    .slide__text {
+      font-size: 1.2rem; 
+      padding-bottom: 0;
+    }
+}
 @media screen and (max-width: 480px) {
-
+  .child-slide{
+    flex-direction: column;
+  }
     .login-btn{
         font-size: 1rem;
         padding: 0.5rem 1.5rem;
     }
-    /* Navigation */
+
     .nav-links {
         flex-direction: column;
         gap: 1.2rem;
@@ -108,7 +158,6 @@
         align-items: center;
         justify-content: center;
     }
-
     .login-container {
         width: 100%;
         text-align: center;
@@ -116,166 +165,95 @@
     .dots{
         top: 35rem;
     }
+  }
 
-}
-/* ------------------------------------------------- */
-
-/* Responsive Styles */
-@media (max-width: 1135px) {
-
+@media (max-width: 460px) {
+ 
     .parent-slider {
-        height: 50rem; /* Decrease the height of the slider */
+        height: 63rem; 
       }
-    
-      /* Resize the slide content */
       .slide-content {
-        max-width: 30rem;
-        padding: 1rem; /* Reduce padding */
+        padding: rem; 
       }
-    
-      /* Resize the text */
       .slide__header {
-        font-size: 2.4rem; /* Smaller font size */
+        padding: 0 1.2rem;
       }
-    
       .slide__text {
-        font-size: 1.1rem; /* Smaller text for mobile */
+        padding: 1.2rem;
       }
-    
-      /* Image adjustments */
       .slider-img {
-        height: auto; /* Make the image height adjust automatically */
-        max-height: 15rem; /* Adjust max-height of the image */
-      }
-    
-      /* Adjust the dot positioning */
-      .dots {
-        top:36rem;
-      }
-    
-}
-
-  @media (max-width: 700px){
-    .hamburger-login-container{
-      display: none;
-    }
-    .parent-slider {
-        height: 52rem; /* Decrease the height of the slider */
-      }
-    
-      /* Resize the slide content */
-      .slide-content {
-        max-width: 45rem;
-        padding: 1rem; /* Reduce padding */
-      }
-    
-      /* Resize the text */
-      .slide__header {
-        padding: 0;
-        font-size: 2rem; /* Smaller font size */
-      }
-    
-      .slide__text {
-        padding: 0;
-        font-size: 0.9rem; /* Smaller text for mobile */
-      }
-    
-      /* Image adjustments */
-      .slider-img {
-        height: auto; /* Make the image height adjust automatically */
-        max-height: 10rem; /* Adjust max-height of the image */
+        height: auto; 
+        max-height: 10rem; 
       }
       .dots{
-        top:37rem;
+        top: 41rem;
       }
-    
-
   }
-  @media (max-width: 460px) {
-    .parent-slider {
-        height: 63rem; /* Decrease the height of the slider */
-      }
-   
-    
-      /* Resize the slide content */
-      .slide-content {
-      
-        padding: 1.5rem; /* Reduce padding */
-      }
-    
-      /* Resize the text */
-      .slide__header {
-        padding: 0;
-        font-size: 1.8rem; /* Smaller font size */
-      }
-    
-      .slide__text {
-        padding: 0;
-        font-size: 0.8rem; /* Smaller text for mobile */
-      }
-    
-      /* Image adjustments */
-      .slider-img {
-        height: auto; /* Make the image height adjust automatically */
-        max-height: 10rem; /* Adjust max-height of the image */
-      }
-
-      .dots{
-        top: 40rem;
-      }
-    
+@media (max-width: 430px){
+  .menu-burger {
+    font-size: 1.5rem;
   }
-  @media (max-width: 430px){
-  
   .logoImg{
     max-height: 3rem;
   }
+  .slider-img {
+    height: auto; 
+    max-height: 10rem;
+  }
   .child-slide{
+    padding: 0;
     flex-direction: column;
   }
-
-
+  .slide-content, .slide__header, .slide__text{
+    padding: 0.2rem;
   }
-  @media (max-width: 320px){
+  .slide__header{
+   font-size: 2.3rem;
+   line-height: 2.5rem;
+  }
+  .slide__text{
+    line-height: 1.6rem;
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 320px){
     .logoImg {
         max-height: 2rem;
         width: auto;
+    }
+    .menu-burger {
+      font-size: 1.2rem;
     }
     .login-btn{
         font-size: 1rem;
     }
     .parent-slider {
-        height: 68rem; /* Decrease the height of the slider */
+        height: 68rem; 
       }
-    
-      /* Resize the slide content */
       .slide-content {
         max-width: 50rem;
-        padding: 1rem; /* Reduce padding */
+        padding: 1.5rem; 
       }
-    
-      /* Resize the text */
       .slide__header {
-        padding: 0;
-        font-size: 2rem; /* Smaller font size */
-      }
     
+        line-height: 2rem;
+        font-size: 1.8rem;
+      }
       .slide__text {
         padding: 0;
-        font-size: 1rem; /* Smaller text for mobile */
+        line-height: 1.5rem;
+        font-size: 1rem;
       }
-    
-      /* Image adjustments */
       .slider-img {
-        height: auto; /* Make the image height adjust automatically */
-        max-height: 10rem; /* Adjust max-height of the image */
+        height: auto; 
+        max-height: 7rem;
       }
     .child-slide{
         flex-direction: column;
       }
+      .dots{
+        top:41.8rem
+      }
   }
 
 
-
-
-  /* ------------------------------------ */
