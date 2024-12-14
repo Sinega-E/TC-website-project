@@ -82,6 +82,7 @@ input, textarea, select {
     padding: 1rem 0;
     background-color: var(--bg-color);
     flex-wrap: wrap;
+    margin-right: 1rem;
 }
 
 /* Container Header */
@@ -110,9 +111,6 @@ input, textarea, select {
   font-size: 2rem;
   color: var(--primary-color-darker);
   transition: all 0.3s ease;
-}
-.hamburger-login-container{
-  display: none; 
 }
 
 /* Container */
