@@ -22,6 +22,7 @@
     --gradient-primary: linear-gradient(to top left, #eb9400, #ffcb03); /* Orange to Yellow */
     --gradient-secondary: linear-gradient(to top left, #443089, #6a4cd4); /* Purple to Lavender */
     --gradient-bg:linear-gradient(to top left, #ffcb03, #6a4cd4)
+
     /* Additional Colors */
     --bg-color: #f4f4f4; /* Light Gray Background */
     --text-color: #333333; /* Dark Text Color */
@@ -63,7 +64,6 @@ h2{
     font-size: 1.5rem;
 }
 
-
 /* Form Elements */
 input, textarea, select {
     font-family: "Quicksand", sans-serif;  
@@ -72,9 +72,8 @@ input, textarea, select {
     border-radius: 0.25rem;
 }
 
-
-/* -------------------------------------------------------------------------------------------------- */
 /* NAVIGATION */
+/* -------------------------------------------------------------------------------------------------- */
 /* Header */
 .header {
     display: flex;
@@ -94,32 +93,28 @@ input, textarea, select {
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    /* padding: 1rem 0rem; */
-    
 }
 .login-container{
   margin-right: 1rem;
 }
 .hamburger {
-  display: none; /* Hide initially */
+  display: none;
   background: none;
   border: none;
   cursor: pointer;
   flex-direction: column;
   gap: 5px;
-  order: 0; /* Show on the left in mobile view */
 }
-
 .menu-burger {
   margin-left: 1rem;
   font-size: 2rem;
   color: var(--primary-color-darker);
   transition: all 0.3s ease;
 }
-
 .hamburger-login-container{
   display: none; 
 }
+
 /* Container */
 .container {
     margin: 0 auto;
@@ -177,16 +172,16 @@ input, textarea, select {
    
 }
 
-/* --------------------------------------------------------------------------------------------------------------------------------- */
 /* Slider Styles */
+/* --------------------------------------------------------------------------------------------------------------------------------- */
 
 /* Slider Container */
 .parent-slider {
-  width: 100%; /* Full width */
+  width: 100%; 
   height: 27.5rem;
   position: relative;
   overflow: hidden;
-  margin-top: 0; /* Pulls slider up under the navigation for seamless integration */
+  margin-top: 0; 
   z-index: -1;
   padding: 0;
 }
@@ -195,15 +190,15 @@ input, textarea, select {
 .child-slide {
   position: absolute;
   width: 100%;
-  height: 100%; /* Ensure slides fill the slider height */
+  height: 100%; 
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   transition: all 1s ease-in-out;
-  background-size: cover; /* Ensures background image covers the slide */
-  background-position: center; /* Centers the background image */
-  background-repeat: no-repeat; /* Prevents tiling of the image */
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Slide Content */
@@ -211,9 +206,8 @@ input, textarea, select {
   padding: 1.5rem;
   width: 100%;
   max-width: 40rem;
-  background: rgba(255, 255, 255, 1); /* Semi-transparent background for readability */
+  background: rgba(255, 255, 255, 1); 
   border-radius: 20rem;
-  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  */
   text-align: center;
 }
 .slider-img{
@@ -222,8 +216,6 @@ input, textarea, select {
 .child-slide {
   background-image: url('./assets/slider-bg-image.jpg');
 }
-
-
 .slide__header {
   color: var(--primary-color-darker);
   font-family:"Poppins", sans-serif;
@@ -231,7 +223,6 @@ input, textarea, select {
   font-weight: 900;
   margin-bottom: 1rem;
   line-height: 3.5rem;
-  
 }
 .slide__header-2{
   color: var(--secondary-color);
@@ -247,17 +238,17 @@ input, textarea, select {
   color: var(--primary-color-darker);
 }
 
-/* Dots */
+/* Dots--position */
 .dots {
   position: absolute;
   left: 50%;
   top: 34rem;
-
   transform: translateX(-50%);
   display: flex;
   gap: 1rem;
 }
 
+/* Dots--size */
 .dots__dot {
   border: none;
   background-color: var(--primary-color-opacity);
@@ -268,35 +259,31 @@ input, textarea, select {
   cursor: pointer;
   transition:all 0.3s ease-in-out;
 }
-
 .dots__dot:hover {
   transform: scale(1.2);
   background-color: var(--primary-color-darker);
 }
-
 .dots__dot--active {
   background-color: var(--primary-color-darker);
   opacity: 1;
 }
-/* ---------------------------------------------------------------------------------------------------------------------------------- */
+
 /* Course Section */
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
 .courses {
     padding: 2rem;
     text-align: center;
 }
-
 .course-categories {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
 }
-
 .course-card {
     background-color: var(--bg-light);
     padding: 1rem;
     box-shadow: 0 0.2rem 0.5rem var(--shadow-color);
 }
-
 .course-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -304,6 +291,7 @@ input, textarea, select {
 }
 
 /* Registration Section */
+/* ------------------------------------------------------------------------- */
 .registration-form {
     display: flex;
     justify-content: space-between;
@@ -325,6 +313,7 @@ form button {
 }
 
 /* Trainer Profile Section */
+/* -------------------------------------------------------------------------- */
 .trainer-profile .trainer-cards {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -332,6 +321,7 @@ form button {
 }
 
 /* Review Section */
+/* -------------------------------------------------------------------------- */
 .review-carousel {
     display: flex;
     justify-content: space-between;
@@ -349,6 +339,7 @@ form button {
 }
 
 /* Footer */
+/* -------------------------------------------------------------------------- */
 .footer {
     text-align: center;
     padding: 1rem;
