@@ -1,7 +1,5 @@
 @media (max-width: 1135px) {
-  .parent-slider {
-      height: 50rem;
-    }
+
     .slide-content {
       max-width: 30rem;
       padding: 1rem; 
@@ -21,9 +19,7 @@
       height: auto; 
       max-height: 15rem; 
     }
-    .dots {
-      top:34rem;
-    }
+
   
 }
 @media screen and (max-width: 1050px){
@@ -78,9 +74,7 @@
     .hamburger{
         display: flex;
     }
-    .parent-slider {
-      height: 48rem; 
-    }
+
     .slide-content {
       max-width: 30rem;
       padding: 1rem; 
@@ -95,17 +89,17 @@
       height: auto; 
       max-height: 15rem; 
     }
-    .dots {
-        top:33rem;
+
+      .dots__dot {
+        height: 0.9rem;
+        width: 0.9rem;
+       
       }
 }
 @media (max-width: 700px){
   .hamburger-login-container{
     display: none;
   }
-  .parent-slider {
-      height: 52rem; 
-    }
     .slide-content {
       max-width: 45rem;
       padding: 1rem; 
@@ -114,9 +108,7 @@
       height: auto; 
       max-height: 10rem;
     }
-    .dots{
-      top:35rem;
-    }
+
   }
 @media (max-width: 580px) {
   .menu-burger {
@@ -137,9 +129,7 @@
     }
 }
 @media screen and (max-width: 480px) {
-  .child-slide{
-    flex-direction: column;
-  }
+
     .login-btn{
         font-size: 1rem;
         padding: 0.5rem 1.5rem;
@@ -162,18 +152,13 @@
         width: 100%;
         text-align: center;
     }
-    .dots{
-        top: 35rem;
-    }
+
   }
 
 @media (max-width: 460px) {
  
-    .parent-slider {
-        height: 63rem; 
-      }
-      .slide-content {
-        padding: rem; 
+  .parent-slider {
+        height: 34rem; 
       }
       .slide__header {
         padding: 0 1.2rem;
@@ -186,7 +171,7 @@
         max-height: 10rem; 
       }
       .dots{
-        top: 41rem;
+        top: 40.5rem;
       }
   }
 @media (max-width: 430px){
@@ -202,7 +187,6 @@
   }
   .child-slide{
     padding: 0;
-    flex-direction: column;
   }
   .slide-content, .slide__header, .slide__text{
     padding: 0.2rem;
@@ -214,6 +198,9 @@
   .slide__text{
     line-height: 1.6rem;
     font-size: 1.1rem;
+  }
+  .dots{
+    top: 39.6rem;
   }
 }
 @media (max-width: 320px){
@@ -227,9 +214,6 @@
     .login-btn{
         font-size: 1rem;
     }
-    .parent-slider {
-        height: 68rem; 
-      }
       .slide-content {
         max-width: 50rem;
         padding: 1.5rem; 
@@ -237,23 +221,43 @@
       .slide__header {
     
         line-height: 2rem;
-        font-size: 1.8rem;
+        font-size: 1.75rem;
       }
       .slide__text {
         padding: 0;
         line-height: 1.5rem;
         font-size: 1rem;
       }
-      .slider-img {
-        height: auto; 
-        max-height: 7rem;
-      }
-    .child-slide{
-        flex-direction: column;
-      }
       .dots{
-        top:41.8rem
+        top:38.5rem
       }
   }
+  @media (max-width: 260px){
+    .logoImg {
+      max-height: 1.8rem;
+      width: auto;
+  }
+  .menu-burger {
+    font-size: 1rem;
+  }
+  .login-btn{
+      font-size: 0.8rem;
+  }
 
+    .slide__header {
+      padding: 0 1rem; 
+      line-height: 2rem;
+      font-size: 1.5rem;
+    }
+    .slide__text {
+
+      padding: 0 0.2rem; 
+      line-height: 1.3rem;
+      font-size: 0.8rem;
+    }
+    .dots__dot {
+      max-height: 0.7rem;
+      max-width: 0.7rem;
+    }
+  }
 

@@ -183,7 +183,7 @@ input, textarea, select {
 /* Slider Container */
 .parent-slider {
   width: 100%; /* Full width */
-  height: 50rem;
+  height: 27.5rem;
   position: relative;
   overflow: hidden;
   margin-top: 0; /* Pulls slider up under the navigation for seamless integration */
@@ -195,7 +195,7 @@ input, textarea, select {
 .child-slide {
   position: absolute;
   width: 100%;
-  height: 55%; /* Ensure slides fill the slider height */
+  height: 100%; /* Ensure slides fill the slider height */
   display: flex;
   align-items: center;
   justify-content: center;
