@@ -93,7 +93,7 @@ input, textarea, select {
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    padding: 1rem 0rem;
+    /* padding: 1rem 0rem; */
     
 }
 .login-container{
@@ -116,7 +116,9 @@ input, textarea, select {
   transition: all 0.3s ease;
 }
 
-
+.hamburger-login-container{
+  display: none; 
+}
 /* Container */
 .container {
     margin: 0 auto;
