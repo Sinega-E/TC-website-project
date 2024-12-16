@@ -446,15 +446,23 @@ input, textarea, select {
 
 /* Course Cards */
 .course-cards {
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 1.5rem;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Optional, for snap scrolling effect */
+  padding: 2rem 0; 
+  justify-content: flex-start; /* Aligns the cards to the start */
 }
+
 .course-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  max-width: 19rem; /* Adjust max width as needed */
   margin: 1rem 0;
   cursor: pointer;
-  max-width: 25rem;
   border-radius: 0.625rem;
   overflow: hidden;
   background-color: var(--bg-light);
@@ -463,6 +471,12 @@ input, textarea, select {
   font-size: 1rem;
   color: var(--primary-color);
   transition: all 0.3s ease;
+  flex-shrink: 0; /* Prevents cards from shrinking */
+  scroll-snap-align: start; /* Optional, for snap scrolling effect */
+}
+
+.course-cards::-webkit-scrollbar {
+  display: none;
 }
 
 .in-detail{
@@ -527,6 +541,7 @@ input, textarea, select {
 /* Show More Link */
 .show-more {
   display: inline-block;
+  align-content: center;
   margin-top: 2rem;
   padding: 0.8rem 1.5rem;
   font-size: 1rem;
