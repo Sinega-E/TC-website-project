@@ -333,10 +333,7 @@
       margin: 0 0.3rem;
       padding-top: 0;
     }
-    .heading-container{
-      padding: 0;
-  
-    }
+
 }
   @media (max-width: 260px){
       /* HEADER */
