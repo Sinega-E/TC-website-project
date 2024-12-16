@@ -43,6 +43,16 @@
     .tagline {
       font-size: 1.1rem; 
     }
+  /* course categories container */
+  .scroll-btn {
+    font-size: 1.8rem;  
+  }
+  .course-categories {
+    gap: 0.4rem;  
+  }
+  .category {
+    font-size: 0.9rem;  
+  }
 }
 @media screen and (max-width: 768px) {
     /* HEADER */
@@ -103,6 +113,19 @@
     width: 7.5rem;
     height: 7.5rem; 
     font-size: 0.9rem; 
+  }
+  /* course categories container */
+  .scroll-btn {
+    font-size: 1.5rem;  
+  }
+  .course-categories {
+    gap: 0.3rem;  
+  }
+  .category {
+    font-size: 0.85rem;  
+  }
+  .category {
+    padding: 0.6rem 1rem;
   }
 }
 @media (max-width: 580px) {
@@ -169,6 +192,19 @@
     font-size: 0.9rem;  
     padding-bottom: 0.5rem;  
   }
+  /* course categories container */
+  .scroll-btn {
+    font-size: 1.3rem;  
+  }
+  .course-categories {
+    gap: 0.2rem; 
+  }
+  .category {
+    font-size: 0.8rem; 
+  }
+  .course-categories-container {
+    padding: 0.5rem; 
+  }
 }
 @media (max-width: 460px) {
   /* Slider Styles */
@@ -233,6 +269,19 @@
     .tagline {
       font-size: 0.9rem;  
     }
+      /* course categories container */
+  .scroll-btn {
+    font-size: 1rem;  
+  }
+  .course-categories {
+    gap: 0.2rem; 
+  }
+  .category {
+    font-size: 0.7rem; 
+  }
+  .course-categories-container {
+    padding: 0.4rem; 
+  }
 }
 @media (max-width: 320px){
       /* HEADER */
@@ -278,6 +327,9 @@
     }
     .tagline {
       font-size: 0.8rem;  
+    }
+    .heading-container{
+      padding: 0;
     }
 }
   @media (max-width: 260px){

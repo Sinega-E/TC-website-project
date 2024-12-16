@@ -309,7 +309,6 @@ input, textarea, select {
   text-align: center;
   color:  #5A2994;
 }
-
 /* Tagline */
 .tagline {
   margin: 0;
@@ -320,7 +319,6 @@ input, textarea, select {
   color:var(--secondary-color);
   line-height: 1.5;
 }
-
 .heading-container{
   padding: 2rem 0;
 }
@@ -328,27 +326,60 @@ input, textarea, select {
 .courses {
   padding: 2rem;
 }
+/* course section button */
+.course-categories-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.scroll-btn {
+  cursor: pointer;
+  font-size: 2rem;  
+  color: #5f4aab;  
+  transition: all 0.3s ease;
+}
+.scroll-btn.right {
+  right: 10px; 
+}
+.scroll-btn:hover {
+  transform: scale(1.05); 
+  transition: all 0.3s ease;
+  color: #7056ce;  
+}
 
 /* Course Categories */
 .course-categories {
   display: flex;
+  overflow-x: auto;
+  gap: 0.5rem;
   justify-content: space-between;
-  margin-bottom: 1.5rem;
+  padding: 1rem;
+  margin: 0 0.8rem;
+  scroll-behavior: smooth;
 }
 .category {
+  flex-shrink: 0;
+  overflow: visible;
   padding: 0.8rem 1.2rem;
+  white-space: nowrap;
   background-color: var(--bg-light);
   border-radius: 0.5rem;
   box-shadow: 0 0.2rem 0.5rem var(--shadow-color);
   font-size: 1rem;
   font-weight: 600;
-  color: var(--text-primary);
+  color: var(--primary-color-darker);
   cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
 }
+.course-categories::-webkit-scrollbar {
+ display: none;
+}
+
 .category:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0 0.4rem 0.8rem var(--shadow-color-darker);
+  color: #ffffff;
+  background-color: var(--primary-color);
 }
 
 /* Course Cards */
@@ -391,6 +422,8 @@ input, textarea, select {
   color: #fff;
 }
 
+
+/* ---------------------------------------------------------------------------------------------------------------------------------- */
 /* Registration Section */
 /* ------------------------------------------------------------------------- */
 .registration-form {

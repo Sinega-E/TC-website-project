@@ -10,15 +10,8 @@ hamburger.addEventListener('click', () => {
 });
 
 
-
-
-
-
-
 const slider = function () {
     const childSliders = document.querySelectorAll('.child-slide');
-    const btnLeft = document.querySelector('.slider__btn--left');
-    const btnRight = document.querySelector('.slider__btn--right');
     const dotContainer = document.querySelector('.dots');
 
     let curSlide = 0;
@@ -82,3 +75,20 @@ const slider = function () {
     });
 };
 slider();
+
+
+// course category scroll
+
+document.getElementById('scroll-left').addEventListener('click', function() {
+    document.querySelector('.course-categories').scrollBy({
+      left: -200, 
+      behavior: 'smooth' 
+    });
+  });
+  
+  document.getElementById('scroll-right').addEventListener('click', function() {
+    document.querySelector('.course-categories').scrollBy({
+      left: 200,  
+      behavior: 'smooth' 
+    });
+  });
