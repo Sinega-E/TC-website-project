@@ -324,7 +324,7 @@ input, textarea, select {
 }
 /* Courses Section Wrapper */
 .courses {
-  padding: 2rem;
+  padding: 0.2rem;
 }
 /* course section button */
 .course-categories-container {
@@ -354,7 +354,7 @@ input, textarea, select {
   gap: 0.5rem;
   justify-content: space-between;
   padding: 1rem;
-  margin: 0 0.8rem;
+  margin: 0 0.5rem ;
   scroll-behavior: smooth;
 }
 .category {

@@ -282,6 +282,9 @@
   .course-categories-container {
     padding: 0.3rem; 
   }
+  .heading-container {
+    padding:0;
+}
 }
 @media (max-width: 320px){
       /* HEADER */
@@ -330,9 +333,12 @@
       padding-bottom: 0;
     }
     .course-categories{
-      margin: 0 0.3rem;
+      margin: 0 0.2rem;
       padding-top: 0;
     }
+
+  
+  
 
 }
   @media (max-width: 260px){
