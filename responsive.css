@@ -1,4 +1,5 @@
 @media (max-width: 1135px) {
+  /* Slider Styles */
   .slide-content {
     max-width: 30rem;
     padding: 1rem; 
@@ -19,6 +20,7 @@
   }
 }
 @media screen and (max-width: 1050px){
+  /* HEADER */
   .header {
       flex-wrap: nowrap; 
   }
@@ -33,10 +35,17 @@
   } 
   .login-btn{
       padding: 0.5rem 0.9rem;
-
   }
+  /* section headings and taglines */
+    .section-headings {
+      font-size: 2.2rem; 
+    }
+    .tagline {
+      font-size: 1.1rem; 
+    }
 }
 @media screen and (max-width: 768px) {
+    /* HEADER */
   .container-header{
     padding: 0;
   }
@@ -56,6 +65,7 @@
   .hamburger{
       display: flex;
   }
+/* Slider Styles */
   .slide__header {
     font-size: 2.6rem; 
   }
@@ -66,8 +76,17 @@
     height: 0.9rem;
     width: 0.9rem;
   }
+  /* section headings and taglines */
+  .section-headings {
+    font-size: 2rem;  
+  }
+  .tagline {
+    font-size: 1rem; 
+    padding-bottom: 0.8rem;  
+  }
 }
 @media (max-width: 700px){
+  /* Slider Styles */
   .slide-content {
     max-width: 45rem;
     padding: 1rem; 
@@ -76,6 +95,7 @@
     height: auto; 
     max-height: 10rem;
   }
+/* Navigation Links : NAVIGATION THROUGH PAGE */
   .nav-icon{
     font-size: 1rem;
   }
@@ -86,14 +106,14 @@
   }
 }
 @media (max-width: 580px) {
-
+    /* HEADER */
   .logoImg {
       max-height: 3.5rem;
-
   }
   .menu-burger {
     font-size: 1.9rem;
   }
+  /* Slider Styles */
   .child-slide{
     flex-direction: column;
   }
@@ -104,6 +124,7 @@
     font-size: 1.2rem; 
     padding-bottom: 0;
   }
+/* Navigation Links : NAVIGATION THROUGH PAGE */
   .nav-icon{
     font-size: 0.8rem;
   }
@@ -114,35 +135,43 @@
   }
 }
 @media screen and (max-width: 480px) {
-  .nav-links ul {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
-    grid-template-rows: repeat(2, 1fr); /* 2 equal-height rows */
-    justify-items: center;
-    gap: 0;
-
-}
-.nav-links{
-  padding-top: 2rem;
-  margin: 0 5.5rem;
-}
-.nav-link {
-  width: 8rem; /* Set a fixed width for the circle */
-  height: 8rem; /* Set a fixed height for the circle */
-  font-size: 0.8rem;
-}
-
-  .login-btn{
+    /* HEADER */
+    .login-btn{
       font-size: 1rem;
       padding: 0.5rem 1.5rem;
     }
   .head-links {
       gap: 1.2rem;
     } 
+  .nav-links ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    justify-items: center;
+    gap: 0;
 
-
+}
+/* Navigation Links : NAVIGATION THROUGH PAGE */
+  .nav-links{
+    padding-top: 2rem;
+    margin: 0 5.5rem;
   }
+  .nav-link {
+    width: 8rem;
+    height: 8rem;
+    font-size: 0.8rem;
+  }
+  /* section headings and taglines */
+  .section-headings {
+    font-size: 1.8rem;  
+  }
+  .tagline {
+    font-size: 0.9rem;  
+    padding-bottom: 0.5rem;  
+  }
+}
 @media (max-width: 460px) {
+  /* Slider Styles */
   .parent-slider {
       height: 34rem; 
     }
@@ -155,20 +184,21 @@
     .dots{
       top: 40.5rem;
     }
-
+/* Navigation Links : NAVIGATION THROUGH PAGE */
     .nav-links{
       padding-top: 1.8rem;
       margin: 0 4.5rem;
     }
-
   }
 @media (max-width: 430px){
+   /* HEADER */
   .menu-burger {
     font-size: 1.6rem;
   }
   .logoImg{
     max-height: 3rem;
   }
+  /* Slider Styles */
   .child-slide{
     padding: 0;
   }
@@ -186,21 +216,26 @@
   .dots{
     top: 39.6rem;
   }
-
-  
+/* Navigation Links : NAVIGATION THROUGH PAGE */
   .nav-links{
     padding-top: 1.8rem;
     margin: 0 2.5rem;
   }
-  
   .nav-link {
-    width: 7.5rem; /* Set a fixed width for the circle */
-    height: 7.5rem; /* Set a fixed height for the circle */
+    width: 7.5rem; 
+    height: 7.5rem; 
     font-size: 0.7rem;
   }
-
+  /* section headings and taglines */
+    .section-headings {
+      font-size: 1.6rem;  
+    }
+    .tagline {
+      font-size: 0.9rem;  
+    }
 }
 @media (max-width: 320px){
+      /* HEADER */
     .logoImg {
         max-height: 2rem;
         width: auto;
@@ -211,6 +246,7 @@
     .login-btn{
         font-size: 1rem;
     }
+    /* Slider Styles */
     .slide-content {
       max-width: 50rem;
       padding: 1.5rem; 
@@ -227,19 +263,25 @@
     .dots{
       top:38.5rem
     }
-
+/* Navigation Links : NAVIGATION THROUGH PAGE */
     .nav-links{
       padding-top: 1.8rem;
       margin: 0 2.5rem;
     }
-    
     .nav-link {
-      width: 6rem; /* Set a fixed width for the circle */
-      height: 6rem; /* Set a fixed height for the circle */
-      
+      width: 6rem; 
+      height: 6rem;
   }
+/* section headings and taglines */
+    .section-headings {
+      font-size: 1.4rem;  
+    }
+    .tagline {
+      font-size: 0.8rem;  
+    }
 }
   @media (max-width: 260px){
+      /* HEADER */
     .logoImg {
       max-height: 1.8rem;
       width: auto;
@@ -250,6 +292,7 @@
     .login-btn{
         font-size: 0.8rem;
     }
+    /* Slider Styles */
     .slide__header {
       padding: 0 1rem; 
       line-height: 2rem;
@@ -264,7 +307,15 @@
       max-height: 0.7rem;
       max-width: 0.7rem;
     }
+  /* section headings and taglines */
+    .section-headings {
+      font-size: 1.3rem;  
+    }
+    .tagline {
+      font-size: 0.8rem;  
+    }
   }
 
-  /* ----------------------- */
+/* ----------- */
+
 

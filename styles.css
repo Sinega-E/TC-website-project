@@ -47,10 +47,8 @@ p {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 0 1rem;
 }
-
-
 
 /* Form Elements */
 input, textarea, select {
@@ -98,12 +96,6 @@ input, textarea, select {
   font-size: 2rem;
   color: var(--primary-color-darker);
   transition: all 0.3s ease;
-}
-
-/* Container */
-.container {
-    margin: 0 auto;
-    padding: 0 1rem;
 }
 
 /* Logo */
@@ -260,36 +252,36 @@ input, textarea, select {
   padding-top: 4rem;
 }
 .nav-links ul {
-  display: flex; /* Aligns links in a row */
-  justify-content: center; /* Centers links horizontally */
-  gap: 1.5rem; /* Space between the links */
-  list-style: none; /* Removes bullets */
+  display: flex; 
+  justify-content: center; 
+  gap: 1.5rem; 
+  list-style: none;
   margin: 0;
   padding: 1rem 0;
 }
 
 /* Individual Links */
 .nav-links li {
-  display: flex; /* Makes li behave as flex for alignment */
+  display: flex; 
 }
 .nav-icon{
   font-size: 1.1rem;
 }
 .nav-link {
   flex-direction: column;
-  display: inline-flex; /* Use inline-flex for alignment and centering */
-  justify-content: center; /* Centers the text inside */
-  align-items: center; /* Vertically centers the text */
+  display: inline-flex; 
+  justify-content: center; 
+  align-items: center;
   text-decoration: none;
   background-color: var(--bg-color);
   color: #5A2994;
-  width: 9rem; /* Set a fixed width for the circle */
-  height: 9rem; /* Set a fixed height for the circle */
-  border-radius: 100%; /* Ensures the element is round */
+  width: 9rem; 
+  height: 9rem; 
+  border-radius: 100%; 
   font-family: "Poppins", sans-serif;
   font-size: 0.9rem;
   font-weight: 500;
-  box-shadow: 0 4px 6px var(--shadow-color); /* Optional: Adds a subtle shadow */
+  box-shadow: 0 4px 6px var(--shadow-color); 
   transition: all 0.3s ease;
   text-align: center;
 }
@@ -298,7 +290,7 @@ input, textarea, select {
 .nav-link:hover {
   background-color: var(--primary-color);
   color: #fff;
-  transform: translateY(-3px); /* Lifts the link slightly */
+  transform: translateY(-3px);
   box-shadow: 0 6px 10px var(--shadow-color);
 }
 
@@ -307,27 +299,31 @@ input, textarea, select {
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
 /* Headings */
 
-
 .section-headings {
   font-family: "Poppins", sans-serif;
-  font-size: 3rem;
+  font-size: 2.4rem;
+  line-height: 1.2; 
   font-weight: 900;
-  padding-top: 1rem;
-  margin-top: 0;
+  padding: 0;
+  margin: 0;
+  text-align: center;
   color:  #5A2994;
-
 }
 
 /* Tagline */
 .tagline {
   margin: 0;
+  text-align: center;
   padding-bottom: 1rem;
-  font-size: 1.3rem;
-  font-weight: 500;
-  color:#42137ba6;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color:var(--secondary-color);
   line-height: 1.5;
 }
 
+.heading-container{
+  padding: 2rem 0;
+}
 /* Courses Section Wrapper */
 .courses {
   padding: 2rem;
