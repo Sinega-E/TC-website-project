@@ -540,22 +540,24 @@ input, textarea, select {
 
 /* Show More Link */
 .show-more {
-  display: inline-block;
-  align-content: center;
-  margin-top: 2rem;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  font-weight: 600;
+  display: block;          
+  width: max-content;      
+  margin:auto;       
+  text-align: center;      
+  padding: 0.7rem 1rem; 
+  background-color: var(--bg-color);
   color: var(--primary-color);
-  border: 0.125rem solid var(--primary-color);
-  border-radius: 0.5rem;
-  text-decoration: none;
-  background-color: transparent;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  border: var(--primary-color) 2px solid;         
+  font-size: 1rem;  
+  font-weight: 600;       
+  border-radius: 0.5rem;  
+  text-decoration: none;   
+  transition: all 0.3s ease;
 }
 .show-more:hover {
-  background-color: var(--primary-color);
-  color: #fff;
+  background-color: var(--primary-color); 
+  color: white;   
+  transform:scale(1.05);
 }
 
 
