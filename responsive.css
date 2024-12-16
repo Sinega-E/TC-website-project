@@ -18,6 +18,12 @@
     height: auto; 
     max-height: 15rem; 
   }
+  /* course cards */
+  .course-cards {
+    gap: 1.3rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
 }
 @media screen and (max-width: 1050px){
   /* HEADER */
@@ -94,6 +100,11 @@
     font-size: 1rem; 
     padding-bottom: 0.8rem;  
   }
+  /* course cards */
+  .course-cards {
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 700px){
   /* Slider Styles */
@@ -155,6 +166,19 @@
     width: 6rem;
     height: 6rem; 
     font-size: 0.75rem; 
+  }
+  /* sub category */
+  .course-sub-categories-container {
+    max-width: 95%;
+  }
+
+  .sub-category {
+    font-size: 1rem; 
+    padding: 0.3rem; 
+  }
+
+  .sub-category:hover::after {
+    width: 80%; 
   }
 }
 @media screen and (max-width: 480px) {
@@ -225,6 +249,42 @@
       padding-top: 1.8rem;
       margin: 0 4.5rem;
     }
+    /* sub categories */
+    .course-sub-categories-container {
+      flex-direction: column; 
+      align-items: flex-start; 
+      gap: 1rem; 
+    }
+  
+    .sub-category {
+      font-size: 0.9rem; 
+      padding: 0.5rem 0; 
+    }
+  
+    .sub-category:hover::after {
+      width: 80%; 
+    }
+
+    /* course cards */
+    .course-cards{
+      gap: 0.8rem;
+    }
+    .course-title {
+      font-size: 1.25rem;
+    }
+    .course-description {
+      font-size: 0.75rem;
+    }
+    .course-meta p {
+      font-size: 0.75rem;
+    }
+    .course-rating span {
+      font-size: 0.75rem;
+    }
+    .demo-btn {
+      font-size: 0.875rem;
+      padding: 0.5rem 0.75rem;
+    }
   }
 @media (max-width: 430px){
    /* HEADER */
@@ -285,6 +345,9 @@
   .heading-container {
     padding:0;
 }
+.sub-category {
+  font-size: 0.8rem; 
+}
 }
 @media (max-width: 320px){
       /* HEADER */
@@ -336,12 +399,12 @@
       margin: 0 0.2rem;
       padding-top: 0;
     }
-
-  
-  
-
+    /* course cards */
+    .course-cards{
+      gap: 0.5rem;
+    }
 }
-  @media (max-width: 260px){
+@media (max-width: 260px){
       /* HEADER */
     .logoImg {
       max-height: 1.8rem;
@@ -378,5 +441,3 @@
   }
 
 /* ----------- */
-
-

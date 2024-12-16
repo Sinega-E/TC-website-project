@@ -76,6 +76,14 @@ const slider = function () {
 };
 slider();
 
+// course category retaining css styles after clicking
+
+document.querySelectorAll('.category').forEach(item => {
+    item.addEventListener('click', function() {
+      document.querySelectorAll('.category').forEach(sub => sub.classList.remove('active'));
+            this.classList.add('active');
+    });
+  });
 
 // course category scroll
 
@@ -90,5 +98,14 @@ document.getElementById('scroll-left').addEventListener('click', function() {
     document.querySelector('.course-categories').scrollBy({
       left: 200,  
       behavior: 'smooth' 
+    });
+  });
+
+  // course sub category retaining css styles after clicking
+
+  document.querySelectorAll('.sub-category').forEach(item => {
+    item.addEventListener('click', function() {
+      document.querySelectorAll('.sub-category').forEach(sub => sub.classList.remove('active'));
+      this.classList.add('active');
     });
   });

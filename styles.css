@@ -1,5 +1,7 @@
 /* FONT */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
 
 /* COLORS */
 :root {
@@ -38,14 +40,14 @@ body {
 }
 p {
     font-family: "Quicksand", sans-serif; 
-    color: var(--text-color);
+    color:#353535;
     font-size: 1rem;
 }
 
 /* Container for each section */
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 75rem;
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -89,7 +91,7 @@ input, textarea, select {
   border: none;
   cursor: pointer;
   flex-direction: column;
-  gap: 5px;
+  gap: 0.313rem;
 }
 .menu-burger {
   margin-left: 1rem;
@@ -281,7 +283,7 @@ input, textarea, select {
   font-family: "Poppins", sans-serif;
   font-size: 0.9rem;
   font-weight: 500;
-  box-shadow: 0 4px 6px var(--shadow-color); 
+  box-shadow: 0 0.25rem 0.375rem var(--shadow-color); 
   transition: all 0.3s ease;
   text-align: center;
 }
@@ -290,8 +292,8 @@ input, textarea, select {
 .nav-link:hover {
   background-color: var(--primary-color);
   color: #fff;
-  transform: translateY(-3px);
-  box-shadow: 0 6px 10px var(--shadow-color);
+  transform: translateY(-0.188rem);
+  box-shadow: 0 0.375rem 0.625rem var(--shadow-color);
 }
 
 
@@ -300,11 +302,12 @@ input, textarea, select {
 /* Headings */
 
 .section-headings {
+  border-top:#dcc0ff 1px solid;
   font-family: "Poppins", sans-serif;
   font-size: 2.4rem;
   line-height: 1.2; 
   font-weight: 900;
-  padding: 0;
+  padding-top: 1rem;
   margin: 0;
   text-align: center;
   color:  #5A2994;
@@ -313,14 +316,16 @@ input, textarea, select {
 .tagline {
   margin: 0;
   text-align: center;
+  padding-top: 0.5rem;
   padding-bottom: 1rem;
   font-size: 1.2rem;
   font-weight: 400;
-  color:var(--secondary-color);
+  color:var(--primary-color-darker);
   line-height: 1.5;
 }
 .heading-container{
-  padding: 0.5rem 0;
+  padding-top: 2.5rem;
+  padding-bottom: 0.5rem;
 }
 /* Courses Section Wrapper */
 .courses {
@@ -330,17 +335,18 @@ input, textarea, select {
 .course-categories-container {
   position: relative;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
+
 .scroll-btn {
   cursor: pointer;
   font-size: 2rem;  
-  color: #5f4aab;  
+  color: #5f4aab; 
+  line-height: 0; 
   transition: all 0.3s ease;
 }
-.scroll-btn.right {
-  right: 10px; 
-}
+
 .scroll-btn:hover {
   transform: scale(1.05); 
   transition: all 0.3s ease;
@@ -375,31 +381,146 @@ input, textarea, select {
  display: none;
 }
 
-.category:hover {
+.category:hover, .category.active {
   transform: translateY(-0.3rem);
   box-shadow: 0 0.4rem 0.8rem var(--shadow-color-darker);
   color: #ffffff;
   background-color: var(--primary-color);
 }
+/* -----------------------sub-category ---------------------*/
+.course-sub-categories-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  max-width: 90%;
+  margin: auto;
+}
+
+.course-sub-categories {
+  display: flex;
+  font-family: "Roboto Slab", serif;
+  gap:0.625rem;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  overflow-x: auto;
+}
+.course-sub-categories::-webkit-scrollbar {
+  display: none;
+ }
+.sub-category {
+  position: relative; 
+  cursor: pointer;
+  padding: 0.5rem;
+  color:  #433089b2;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.sub-category::after {
+  content: ""; 
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0.02rem; 
+  background-color: var(--secondary-color); 
+  transition: all 0.3s ease; 
+}
+.sub-category:hover, .sub-category.active{
+  color:  var(--secondary-color);
+
+}
+.sub-category:hover::after, .sub-category.active::after{
+  cursor: pointer;
+  border-bottom:  var(--secondary-color) solid 0.063rem;
+  width: 85%; 
+}
+
+/* --- */
 
 /* Course Cards */
 .course-cards {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 .course-card {
+  margin: 1rem 0;
+  cursor: pointer;
+  max-width: 25rem;
+  border-radius: 0.625rem;
+  overflow: hidden;
   background-color: var(--bg-light);
   padding: 1rem;
-  border-radius: 0.5rem;
   box-shadow: 0 0.2rem 0.5rem var(--shadow-color);
-  text-align: left;
   font-size: 1rem;
-  color: var(--text-primary);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+}
+
+.in-detail{
+  color: var(--secondary-color);
+}
+.course-details {
+  padding: 0 0.938rem;
+  padding-bottom:0.938rem;
+  color: var(--secondary-color);
+}
+.course-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.course-description {
+  font-size: 0.875rem;
+  margin-top:0.625rem;
+}
+
+.course-meta p {
+  font-size: 0.875rem;
+  margin-top:0.313rem;
+}
+
+.course-footer {
+  margin-top:0.938rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.course-rating span {
+  font-size:0.875rem;
+  color: #ffb400;
+}
+
+.demo-btn {
+  max-width: auto;
+  font-family: "Quicksand", sans-serif;  
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.demo-btn:hover {
+  background-color: var(--primary-color-darker);
 }
 .course-card:hover {
-  transform: translateY(-0.3rem);
+  border: var(--secondary-color) solid 0.05rem;
+  transform: translateY(-0.625rem);
   box-shadow: 0 0.4rem 0.8rem var(--shadow-color-darker);
 }
 
@@ -411,7 +532,7 @@ input, textarea, select {
   font-size: 1rem;
   font-weight: 600;
   color: var(--primary-color);
-  border: 2px solid var(--primary-color);
+  border: 0.125rem solid var(--primary-color);
   border-radius: 0.5rem;
   text-decoration: none;
   background-color: transparent;
