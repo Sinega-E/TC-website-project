@@ -411,6 +411,7 @@ input, textarea, select {
   display: none;
  }
 .sub-category {
+  min-width:max-content;
   position: relative; 
   cursor: pointer;
   padding: 0.5rem;
