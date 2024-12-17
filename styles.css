@@ -440,7 +440,7 @@ input, textarea, select {
 .sub-category:hover::after, .sub-category.active::after{
   cursor: pointer;
   border-bottom:  var(--secondary-color) solid 0.063rem;
-  width: 85%; 
+  width: 90%; 
 }
 
 /* --- */
