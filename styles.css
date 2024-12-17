@@ -486,7 +486,7 @@ input, textarea, select {
 }
 
 .in-detail{
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-top: 1rem;
   font-weight: 700;
   color: var(--primary-color-darker);

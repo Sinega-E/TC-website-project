@@ -327,8 +327,13 @@
       font-size: 1rem;
     }
   
+    
+.trainer-side-heading {
+  font-size: 0.9rem;
+}
     .trainer-card {
-      padding: 1rem;
+      padding: 1rem 0.2rem;
+      max-width: 26rem;
     }
   
     .btn {
@@ -498,10 +503,10 @@
     }
     /* course cards */
     .course-title {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
     .course-description {
-      font-size: 0.6rem;
+      font-size: 0.8rem;
       margin-top:0.5rem;
     }
 }
