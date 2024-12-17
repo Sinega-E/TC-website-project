@@ -333,7 +333,7 @@ input, textarea, select {
 }
 /* Courses Section Wrapper */
 .courses {
-  background-color: #ffca8e2d; 
+  background-color: #fff7ee2d; 
   padding:0;
 }
 /* course section button */
@@ -473,7 +473,7 @@ input, textarea, select {
   overflow: hidden;
   background-color: #fffdfa;
   padding: 1rem;
-  box-shadow: 0 0.2rem 0.5rem var(--shadow-color);
+  box-shadow: 0 0.3rem 0.6rem var(--shadow-color);
   font-size: 1rem;
   color: var(--primary-color);
   transition: all 0.3s ease;
@@ -556,6 +556,7 @@ input, textarea, select {
   background-color: var(--primary-color-darker);
 }
 .course-card:hover {
+  background-color: #fff;
   border-bottom:#eb9400 solid 2px;
   transform: translateY(-0.625rem);
   box-shadow: 0 0.4rem 0.8rem var(--shadow-color-darker);
@@ -587,31 +588,57 @@ input, textarea, select {
 /* ---------------------------------------------------------------------------------------------------------------------------------- */
 /* Registration Section */
 /* ------------------------------------------------------------------------- */
-.registration-form {
-    display: flex;
-    justify-content: space-between;
+.registration-type{
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #444;
 }
 
-.registration-form .left,
-.registration-form .right {
-    width: 48%;
+.form-group {
+  margin-bottom: 15px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
 }
 
-form input,
-form button {
-    margin-bottom: 1rem;
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #777;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+}
+
+small {
+  color: #888;
 }
 
 /* Trainer Profile Section */
 /* -------------------------------------------------------------------------- */
 
 .trainer-profile{
-  background-color: #ffca8e2d; 
+  background-color:  #fff7ee2d; 
 }
 /* trainer profile Cards */
 .trainer-cards {
@@ -648,6 +675,7 @@ form button {
   display: none;
 }
 .trainer-card:hover {
+  background-color: #fff;
   transform: translateY(-5px);
 }
     /* Trainer Image */
@@ -706,12 +734,9 @@ form button {
       display: inline-flex;
       margin: 0.3rem 0;
       font-size: 0.95rem;
-      color: #555;
     }
     
    .trainer-inner-text{
-
-      color: #555;
       font-size: 0.95rem;
     }
     
@@ -722,9 +747,64 @@ form button {
     }
 
 /* ---------------------------------------- */
-    /* Card Container */
-
-
+.registration {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  padding: 0;
+  max-width: 50%;
+  margin: 0 auto; 
+  box-sizing: border-box;
+}
+  .image-section {
+      flex: 1;
+      background: url('https://via.placeholder.com/450') no-repeat center center/cover;
+      border-radius: 0 10px 10px 0;
+  }
+  .registration-type{
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 28px;
+      color: var(--primary-color-darker);
+      font-family: "Roboto Slab", serif;
+  }
+  .form-group {
+      margin-bottom: 15px;
+  }
+  .form-group label {
+    font-family: "Roboto Slab", serif;
+    color: #433089;
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+  }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: 550;
+      outline: none;
+  }
+  .form-group input:focus,
+  .form-group textarea:focus {
+      border-color: #002853;
+  }
+  .form-group textarea {
+      resize: vertical;
+  }
+  .form-group input[type="checkbox"] {
+      width: auto;
+      margin-right: 10px;
+  }
+  small {
+    text-align: left;
+      color: #888;
+  }
 
 
 /* Review Section */
