@@ -1,7 +1,7 @@
 /* FONT */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 /* COLORS */
 :root {
@@ -34,7 +34,7 @@
 /* BODY TEXT */
 body {
     font-family: "Quicksand", sans-serif; 
-    background-color:#fffefa;
+    background-color:rgb(255, 255, 255);
     color: var(--text-color);
     margin: 0;
 }
@@ -67,7 +67,7 @@ input, textarea, select {
     align-items: center;
     justify-content: space-between;
     padding: 1rem 0;
-    background-color: var(--bg-color);
+    background-color: #fffefa;
     flex-wrap: wrap;
     margin-right: 1rem;
 }
@@ -449,10 +449,10 @@ input, textarea, select {
 .course-cards {
   display: flex;
   gap: 1.5rem;
-  overflow-x: auto; /* Enables horizontal scrolling */
-  scroll-snap-type: x mandatory; /* Optional, for snap scrolling effect */
+  overflow-x: auto; 
+  scroll-snap-type: x mandatory; 
   padding: 2rem 0; 
-  justify-content: flex-start; /* Aligns the cards to the start */
+  justify-content: flex-start; 
 }
 
 .course-card {
@@ -461,19 +461,19 @@ input, textarea, select {
   justify-content: space-between;
   position: relative;
   width: 100%;
-  max-width: 19rem; /* Adjust max width as needed */
+  max-width: 19rem; 
   margin: 1rem 0;
   cursor: pointer;
   border-radius: 0.625rem;
   overflow: hidden;
-  background-color: var(--bg-light);
+  background-color: #fffdfa;
   padding: 1rem;
   box-shadow: 0 0.2rem 0.5rem var(--shadow-color);
   font-size: 1rem;
   color: var(--primary-color);
   transition: all 0.3s ease;
-  flex-shrink: 0; /* Prevents cards from shrinking */
-  scroll-snap-align: start; /* Optional, for snap scrolling effect */
+  flex-shrink: 0; 
+  scroll-snap-align: start; 
 }
 
 .course-cards::-webkit-scrollbar {
@@ -481,6 +481,7 @@ input, textarea, select {
 }
 
 .in-detail{
+  font-size: 1rem;
   color: var(--secondary-color);
 }
 .course-details {
@@ -489,16 +490,33 @@ input, textarea, select {
   color: var(--secondary-color);
 }
 .course-title {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  padding: 0;
+  text-align: center;
+  font-weight: 900;
+
+  padding: 0.3rem;
+  border-radius: 5px;
+  color: var(--primary-color);
+  margin: 1rem 0;
 }
 .course-description {
-  font-size: 0.875rem;
-  margin-top:0.625rem;
+
+  text-align: center;
+  font-family: 'Quicksand';
+  font-size: 1rem;
+  font-weight: 500;
+  padding-bottom: 0.5rem;
+  color: #433089a5;
+  margin-bottom: 0.5rem;
+  border-bottom:  #433089a5 1px solid;
+  
 }
 
 .course-meta p {
-  font-size: 0.875rem;
+  color:#433089a5;
+  font-weight: 500;
   margin-top:0.313rem;
 }
 
@@ -511,7 +529,7 @@ input, textarea, select {
 
 .course-rating span {
   font-size:0.875rem;
-  color: #ffb400;
+  color:#433089;
 }
 
 .demo-btn {
@@ -534,7 +552,7 @@ input, textarea, select {
   background-color: var(--primary-color-darker);
 }
 .course-card:hover {
-  border: var(--secondary-color) solid 0.05rem;
+  border-bottom:#eb9400 solid 2px;
   transform: translateY(-0.625rem);
   box-shadow: 0 0.4rem 0.8rem var(--shadow-color-darker);
 }
@@ -587,11 +605,120 @@ form button {
 
 /* Trainer Profile Section */
 /* -------------------------------------------------------------------------- */
-.trainer-profile .trainer-cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+
+/* trainer profile Cards */
+.trainer-cards {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto; 
+  scroll-snap-type: x mandatory; 
+  padding: 1.5rem 0; 
+  justify-content: flex-start; 
 }
+
+.trainer-card { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 25rem; 
+  cursor: pointer;
+  border-radius: 0.625rem;
+  overflow: hidden;
+  background-color: #fffefa;  padding: 1rem;
+  box-shadow: 0 0.2rem 0.5rem var(--shadow-color);
+  font-size: 1rem;
+  color: var(--primary-color);
+  transition: all 0.3s ease;
+  flex-shrink: 0; 
+  scroll-snap-align: start;
+}
+
+.trainer-cards::-webkit-scrollbar {
+  display: none;
+}
+.trainer-card:hover {
+  transform: translateY(-5px);
+}
+    /* Trainer Image */
+    .trainer-card img {
+      width: 11rem;
+      height: 11rem;
+      object-fit: cover;
+      border-radius: 100%;
+      border: 3px solid #433089b2;
+    }
+    .trainer-name {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 2rem;
+      padding: 0;
+      font-weight: 900;
+      color: var(--primary-color);
+      margin: 1rem 0;
+    }
+    
+    .trainer-title {
+      background-color: #e7e0ff;
+      font-size: 1.2rem;
+      padding: 0.3rem;
+      border-radius: 5px;
+      color: var(--secondary-color-darker);
+      font-weight: 600;
+      margin: 0.1rem 0;
+    }
+    
+    .trainer-bio {
+      font-size: 1rem;
+      font-weight: 450;
+      color: var(--secondary-color);
+      margin-bottom: 0.5rem;
+    }
+    .trainer-details{
+      text-align: left;
+    }
+    .trainer-details p{
+      color: var(--primary-color);
+      font-weight: 500;
+    }
+  .trainer-side-heading {
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      color: #444;
+    }
+    
+  .trainer-courses-list {
+    
+      list-style: none;
+      margin: 0.5rem 0;
+    }
+  
+    .trainer-courses-list li {
+      display: inline-flex;
+      margin: 0.3rem 0;
+      font-size: 0.95rem;
+      color: #555;
+    }
+    
+   .trainer-inner-text{
+
+      color: #555;
+      font-size: 0.95rem;
+    }
+    
+    .trainer-cta {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 1rem;
+    }
+
+/* ---------------------------------------- */
+    /* Card Container */
+
+
+
 
 /* Review Section */
 /* -------------------------------------------------------------------------- */
