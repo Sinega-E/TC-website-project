@@ -322,7 +322,7 @@ input, textarea, select {
   padding-top: 0.5rem;
   padding-bottom: 1rem;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 550;
   color:var(--primary-color-darker);
   line-height: 1.5;
 }
