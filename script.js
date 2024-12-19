@@ -1,18 +1,37 @@
-// Select the hamburger button and header container
-const hamburger = document.querySelector(".hamburger");
-const header = document.querySelector(".header");
+const hamLinks = document.getElementsByClassName("ham-menu-link");
+const menu = document.getElementById("menu");
+const menuButtonIconOpen = document.querySelector(".menu-burger-open");
+const menuButtonIconClose = document.querySelector(".menu-burger-close");
 
-// Add a click event listener to the hamburger button
-hamburger.addEventListener("click", () => {
-  // Toggle the 'active' class on both the hamburger and the header
-  hamburger.classList.toggle("active");
-  header.classList.toggle("active");
+
+
+const childSliders = document.querySelectorAll(".child-slide");
+const dotContainer = document.querySelector(".dots");
+// ------------------------------------Toggle the side menu------------------------------------
+document.getElementById("menu-open-btn").addEventListener("click", function () {
+  menu.classList.toggle("open");
+  if(menu.classList.contains("open")){
+    menuButtonIconOpen.style.display="none"
+  }
 });
 
-const slider = function () {
-  const childSliders = document.querySelectorAll(".child-slide");
-  const dotContainer = document.querySelector(".dots");
+document.getElementById("menu-close-btn").addEventListener("click",function(){
+  menu.classList.remove("open");
+  menuButtonIconOpen.style.display = "block"; 
+});
 
+// Iterate through all "ham-menu-link" elements and add the event listener
+Array.from(hamLinks).forEach(link => {
+  link.addEventListener("click", function () {
+    menu.classList.remove("open"); 
+    menuButtonIconOpen.style.display = "block"; 
+    menuButtonIconClose.style.display = "block";
+  });
+});
+
+
+// ---------------------------------------Sliders------------------------------------------------------
+const slider = function () {
   let curSlide = 0;
   const maxSlide = childSliders.length;
 
@@ -86,7 +105,7 @@ const slider = function () {
 };
 slider();
 
-// course category retaining css styles after clicking
+//  -----------------------course category retaining css styles after clicking ---------------------------------------
 
 document.querySelectorAll(".category").forEach((item) => {
   item.addEventListener("click", function () {

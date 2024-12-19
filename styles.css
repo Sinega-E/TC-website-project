@@ -70,7 +70,7 @@ input, textarea, select {
     padding: 1rem 0;
     background-color: #fffefa;
     flex-wrap: wrap;
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
 }
 
 /* Container Header */
@@ -86,7 +86,8 @@ input, textarea, select {
 .login-container{
   margin-right: 1rem;
 }
-.hamburger {
+/* Hamburger menu */
+.hamburger-btn {
   display: none;
   background: none;
   border: none;
@@ -94,11 +95,68 @@ input, textarea, select {
   flex-direction: column;
   gap: 0.313rem;
 }
-.menu-burger {
-  margin-left: 1rem;
+.menu{
+  position: fixed;
+  display: none;
+  top: 0;
+  right: -30rem; 
+  height: 100%;
+  width:50%;
+  background-color:#ffdfa5ef;
+  color: white;
+  transition: right 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  padding: 20px;
+  z-index: 1000;
+}
+.menu-burger-open{
+  display: block;
+  margin-left: 1.5rem;
   font-size: 2rem;
   color: var(--primary-color-darker);
   transition: all 0.3s ease;
+}
+
+.menu-burger-close{
+  display: none;
+  align-self: flex-end;
+  margin-left: 1rem;
+  padding: 0;
+  font-size: 2.3rem;
+  color: var(--primary-color-darker);
+  transition: all 0.3s ease;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+}
+.menu ul li {
+  margin: 20px 0;
+}
+.menu ul li a {
+  text-align: center;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  display: inline-block;
+  text-decoration: none;
+  color: var(--secondary-color-darker); 
+  font-family: "Quicksand", sans-serif; 
+  font-weight: bolder;
+  font-size: 1.13rem;
+  transition: all 0.3s;
+}
+.menu ul li a:hover{
+  background-color: var(--secondary-color-darker);
+  color: white;
+}
+/* Active menu state */
+.menu.open {
+  right: 0; 
 }
 
 /* Logo */
@@ -747,66 +805,71 @@ small {
     }
 
 /* ---------------------------------------- */
+/* Registration Form */
 .registration {
-  display: flex; 
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center; 
-  padding: 0;
-  max-width: 50%;
-  margin: 0 auto; 
-  box-sizing: border-box;
 }
-  .image-section {
-      flex: 1;
-      background: url('https://via.placeholder.com/450') no-repeat center center/cover;
-      border-radius: 0 10px 10px 0;
-  }
-  .registration-type{
-      text-align: center;
-      margin-bottom: 20px;
-      font-size: 28px;
-      color: var(--primary-color-darker);
-      font-family: "Roboto Slab", serif;
-  }
-  .form-group {
-      margin-bottom: 15px;
-  }
-  .form-group label {
-    font-family: "Roboto Slab", serif;
-    color: #433089;
-      display: block;
-      margin-bottom: 5px;
-      font-weight: 600;
-  }
-  .form-group input,
-  .form-group select,
-  .form-group textarea {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 1rem;
-      font-weight: 550;
-      outline: none;
-  }
-  .form-group input:focus,
-  .form-group textarea:focus {
-      border-color: #002853;
-  }
-  .form-group textarea {
-      resize: vertical;
-  }
-  .form-group input[type="checkbox"] {
-      width: auto;
-      margin-right: 10px;
-  }
-  small {
-    text-align: left;
-      color: #888;
-  }
 
+.registration-type {
+  text-align: center;
+  color:var(--primary-color);
 
+  font-size: 28px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 16px;
+  color:var(--secondary-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  max-width: 50%;
+  padding: 14px 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  background-color: #fafafa;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #5c6bc0;
+  box-shadow: 0 0 5px rgba(92, 107, 192, 0.3);
+}
+
+.form-group input[type="checkbox"] {
+  max-width: 50%;
+  margin-right: 10px;
+}
+
+.form-group small {
+  font-size: 14px;
+  color: #888;
+  font-family: "Roboto", sans-serif;
+}
 /* Review Section */
 /* -------------------------------------------------------------------------- */
 .review-carousel {

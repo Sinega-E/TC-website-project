@@ -1,470 +1,548 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="responsive.css">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-straight/css/uicons-bold-straight.css'>
+  <link rel='stylesheet'
+    href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+  <link rel='stylesheet'
+    href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+  <link rel='stylesheet'
+    href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
+  <link rel='stylesheet'
+    href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-straight/css/uicons-bold-straight.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
 
 
-
-    <script defer src="script.js"></script>
-    <title>Talky Community</title>
+  <script defer src="script.js"></script>
+  <title>Talky Community</title>
 </head>
+
 <body>
-    
-    <!-- HEADER -->
-    <section class="container-header">
-            <img class="logoImg" src="./logo.png" alt="Training Center Logo" aria-label="Logo">
-            <div class="header">
-            <nav>
-                <ul class="head-links">
-                    <li><a class="head-link" href="#courses" aria-label="View Our Courses">Courses</a></li>
-                    <li><a class="head-link" href="#trainers" aria-label="Learn About Our Trainers">Trainers</a></li>
-                    <li><a class="head-link" href="#registration" aria-label="Student and Trainer Registration">Registration</a></li>
-                    <li><a class="head-link" href="#reviews" aria-label="Read Reviews">Reviews</a></li>
-                </ul>
-            </nav>
-            <div class="login-contadiner">
-                <button class="btn login-btn" aria-label="Log In to Your Account">Log In</button>
-            </div>
-        </div>
-        <!-- Menu for smaller screens -->
-        <button class="hamburger" aria-label="Toggle Header Menu">
-            <i class="fi fi-br-menu-burger menu-burger"></i>
-        </button>
-    </section>
-  
-<!-- SLIDERS -->
-<div class="section__title--slide" aria-label="Image Sliders">
+
+  <!-- HEADER -->
+  <section class="container-header">
+    <img class="logoImg" src="./logo.png" alt="Training Center Logo" aria-label="Logo">
+    <div class="header">
+      <nav>
+        <ul class="head-links">
+          <li><a class="head-link" href="#courses" aria-label="View Our Courses">Courses</a></li>
+          <li><a class="head-link" href="#trainers" aria-label="Learn About Our Trainers">Trainers</a></li>
+          <li><a class="head-link" href="#registration" aria-label="Student and Trainer Registration">Registration</a>
+          </li>
+          <li><a class="head-link" href="#reviews" aria-label="Read Reviews">Reviews</a></li>
+        </ul>
+      </nav>
+      <div class="login-container">
+        <button class="btn login-btn" aria-label="Log In to Your Account">Log In</button>
+      </div>
+    </div>
+    <!-- hamburger menu -->
+    <div class="menu" id="menu">
+      <button class="hamburger-btn menu-burger-close" id="menu-close-btn" aria-label="Toggle Header Menu">
+        <i class="fi fi-bs-cross-small menu-burger-close-icon"></i>
+      </button>
+        <nav>
+        <ul>
+          <li><a class="head-link ham-menu-link" href="#courses" aria-label="View Our Courses">Courses</a></li>
+          <li><a class="head-link ham-menu-link" href="#trainers" aria-label="Learn About Our Trainers">Trainers</a></li>
+          <li><a class="head-link ham-menu-link" href="#registration" aria-label="Student and Trainer Registration">Registration</a></li>
+          <li><a class="head-link ham-menu-link" href="#reviews" aria-label="Read Reviews">Reviews</a></li>
+        </ul>
+      <div class="login-container">
+        <button class="btn login-btn ham-menu-link" aria-label="Log In to Your Account">Log In</button>
+      </div>
+    </div>
+    <!-- Menu for smaller screens -->
+    <button class="hamburger-btn  menu-burger-open" id="menu-open-btn" aria-label="Toggle Header Menu">
+      <i class="fi fi-br-menu-burger menu-burger-open-icon"></i>
+    </button>
+  </section>
+
+  <!-- SLIDERS -->
+  <div class="section__title--slide" aria-label="Image Sliders">
     <div class="parent-slider">
-        <!-- Slide 1 -->
-        <div class="child-slide slide--1">
-            <div class="slide-content">
-                <h5 class="slide__header slide__header-1">Affordable Course Packages</h5>
-                <blockquote class="slide__text">
-                    Learn without breaking the bank! Explore our diverse course packages designed to fit all budgets. Quality education at an affordable price for everyone.
-                </blockquote>
-            </div>
-            <img class="slider-img" src="./assets/slider-img-1.png" alt="">
+      <!-- Slide 1 -->
+      <div class="child-slide slide--1">
+        <div class="slide-content">
+          <h5 class="slide__header slide__header-1">Affordable Course Packages</h5>
+          <blockquote class="slide__text">
+            Learn without breaking the bank! Explore our diverse course packages designed to fit all budgets. Quality
+            education at an affordable price for everyone.
+          </blockquote>
         </div>
+        <img class="slider-img" src="./assets/slider-img-1.png" alt="">
+      </div>
 
-        <!-- Slide 2 -->
-        <div class="child-slide slide--2">
-            <div class="slide-content">
-                <h5 class="slide__header slide__header-2">Flexible Scheduling</h5>
-                <blockquote class="slide__text slide__text-2">
-                    Your schedule, your choice! Book a demo session and select a trainer who fits your needs. Classes are available at times that work best for you.
-                </blockquote>
-            </div>
-            <img class="slider-img" src="./assets/slider-img-2.png" alt="">
+      <!-- Slide 2 -->
+      <div class="child-slide slide--2">
+        <div class="slide-content">
+          <h5 class="slide__header slide__header-2">Flexible Scheduling</h5>
+          <blockquote class="slide__text slide__text-2">
+            Your schedule, your choice! Book a demo session and select a trainer who fits your needs. Classes are
+            available at times that work best for you.
+          </blockquote>
         </div>
+        <img class="slider-img" src="./assets/slider-img-2.png" alt="">
+      </div>
 
-        <!-- Slide 3 -->
-        <div class="child-slide slide--3">
-            <div class="slide-content">
-                <h5 class="slide__header slide__header-3">Finally free from old-school banks</h5>
-                <p class="slide__text slide__text-3">
-                    We're here for you every step of the way. Whether it's for consultations, questions, or refunds, contact us anytime for quick and helpful support.
-                </p>
-            </div>
-            <img class="slider-img" src="./assets/slider-img-3.png" alt="">
+      <!-- Slide 3 -->
+      <div class="child-slide slide--3">
+        <div class="slide-content">
+          <h5 class="slide__header slide__header-3">Finally free from old-school banks</h5>
+          <p class="slide__text slide__text-3">
+            We're here for you every step of the way. Whether it's for consultations, questions, or refunds, contact us
+            anytime for quick and helpful support.
+          </p>
         </div>
+        <img class="slider-img" src="./assets/slider-img-3.png" alt="">
+      </div>
     </div>
     <div class="dots" aria-label="Slider Header Dots"></div>
-    </div>
-</div>
+  </div>
+  </div>
 
-<!-- ------------------------------------------------------------------ -->
- <!-- NAVIGATION THROUGH PAGE -->
- <div class="nav-links">
+  <!-- ------------------------------------------------------------------ -->
+  <!-- NAVIGATION THROUGH PAGE -->
+  <div class="nav-links">
     <ul class="grid-container-nav-link">
-        <li><a href="#courses" class="nav-link nav-link-1"><i class="nav-icon fi fi-bs-e-learning"></i>Go to Courses Section</a></li>
-        <li><a href="#trainers" class="nav-link nav-link-2"><i class="nav-icon fi fi-ss-chalkboard-user"></i>Go to Trainers Section</a></li>
-        <li><a href="#registration" class="nav-link nav-link-3"><i class="nav-icon fi fi-ss-form"></i>Go to Registration Section</a></li>
-        <li><a href="#reviews" class="nav-link nav-link-4"><i class="nav-icon fi fi-ss-feedback-review"></i>Go to Reviews Section</a></li>
+      <li><a href="#courses" class="nav-link nav-link-1"><i class="nav-icon fi fi-bs-e-learning"></i>Go to Courses
+          Section</a></li>
+      <li><a href="#trainers" class="nav-link nav-link-2"><i class="nav-icon fi fi-ss-chalkboard-user"></i>Go to
+          Trainers Section</a></li>
+      <li><a href="#registration" class="nav-link nav-link-3"><i class="nav-icon fi fi-ss-form"></i>Go to Registration
+          Section</a></li>
+      <li><a href="#reviews" class="nav-link nav-link-4"><i class="nav-icon fi fi-ss-feedback-review"></i>Go to Reviews
+          Section</a></li>
     </ul>
-</div>
-<!-- ------------------------------------------------------------------ -->
-    <!-- Course Section -->
-    <section id="courses" class="courses">
-        <div class="container">
-            <div class="heading-container">
-                <h2 class="section-headings">Explore Our Courses</h2>
-                <p class="tagline">Unlock Your Potential with Our Courses</p>
-            </div>
-        <div class="course-categories-container">
-            <i id="scroll-left" class="scroll-btn left fi fi-ss-angle-circle-left"></i>
-            <div class="course-categories">
-                <div class="category">Technology & IT</div>
-                <div class="category">Business & Management</div>
-                <div class="category">Creative Arts & Design</div>
-                <div class="category">Health & Wellness</div>
-                <div class="category">Science & Engineering</div>
-                <div class="category">Education & Teaching</div>
-                <div class="category">Languages</div>
-                <div class="category">Personal Development</div>
-                <div class="category">Social Sciences & Humanities</div>
-                <div class="category">Marketing & Communication</div>
-                <div class="category">Law & Legal Studies</div>
-                <div class="category">Cooking & Culinary Arts</div>
-                <div class="category">Sports & Outdoor Activities</div>
-                <div class="category">Agriculture & Environment</div>
-                <div class="category">Other Specialized Fields</div>
-                <div class="category">School Subjects (K-12)</div>
-                <div class="category">Undergraduate (UG) Subjects</div>
-                <div class="category">Postgraduate (PG) Subjects</div>
-                <div class="category">Personal Development</div>
-                <div class="category">Social Sciences & Humanities</div>
-            </div>
-            <i  id="scroll-right" class="scroll-btn right fi fi-ss-angle-circle-right"></i>
+  </div>
+  <!-- ------------------------------------------------------------------ -->
+  <!-- Course Section -->
+  <section id="courses" class="courses">
+    <div class="container">
+      <div class="heading-container">
+        <h2 class="section-headings">Explore Our Courses</h2>
+        <p class="tagline">Unlock Your Potential with Our Courses</p>
+      </div>
+      <div class="course-categories-container">
+        <i id="scroll-left" class="scroll-btn left fi fi-ss-angle-circle-left"></i>
+        <div class="course-categories">
+          <div class="category">Technology & IT</div>
+          <div class="category">Business & Management</div>
+          <div class="category">Creative Arts & Design</div>
+          <div class="category">Health & Wellness</div>
+          <div class="category">Science & Engineering</div>
+          <div class="category">Education & Teaching</div>
+          <div class="category">Languages</div>
+          <div class="category">Personal Development</div>
+          <div class="category">Social Sciences & Humanities</div>
+          <div class="category">Marketing & Communication</div>
+          <div class="category">Law & Legal Studies</div>
+          <div class="category">Cooking & Culinary Arts</div>
+          <div class="category">Sports & Outdoor Activities</div>
+          <div class="category">Agriculture & Environment</div>
+          <div class="category">Other Specialized Fields</div>
+          <div class="category">School Subjects (K-12)</div>
+          <div class="category">Undergraduate (UG) Subjects</div>
+          <div class="category">Postgraduate (PG) Subjects</div>
+          <div class="category">Personal Development</div>
+          <div class="category">Social Sciences & Humanities</div>
         </div>
-        <div class="course-sub-categories-container">
-                <div class="course-sub-categories">
-                  <div class="sub-category">English language</div>
-                  <div class="sub-category">Category 2</div>
-                  <div class="sub-category">Category 3</div>
-                  <div class="sub-category">Category 4</div>
-                  <div class="sub-category">Category 5</div>
-                  <div class="sub-category">Category 1</div>
-                  <div class="sub-category">Category 2</div>
-                  <div class="sub-category">Category 3</div>
-                  <div class="sub-category">Category 4</div>
-                  <div class="sub-category">Category 5</div>
-                  <div class="sub-category">Category 1</div>
-                  <div class="sub-category">Category 2</div>
-                  <div class="sub-category">Category 3</div>
-                  <div class="sub-category">Category 4</div>
-                  <div class="sub-category">Category 5</div>
-                  <div class="sub-category">Category 1</div>
-                  <div class="sub-category">Category 2</div>
-                  <div class="sub-category">Category 3</div>
-                  <div class="sub-category">Category 4</div>
-                  <div class="sub-category">Category 5</div>
-                </div>
+        <i id="scroll-right" class="scroll-btn right fi fi-ss-angle-circle-right"></i>
+      </div>
+      <div class="course-sub-categories-container">
+        <div class="course-sub-categories">
+          <div class="sub-category">English language</div>
+          <div class="sub-category">Category 2</div>
+          <div class="sub-category">Category 3</div>
+          <div class="sub-category">Category 4</div>
+          <div class="sub-category">Category 5</div>
+          <div class="sub-category">Category 1</div>
+          <div class="sub-category">Category 2</div>
+          <div class="sub-category">Category 3</div>
+          <div class="sub-category">Category 4</div>
+          <div class="sub-category">Category 5</div>
+          <div class="sub-category">Category 1</div>
+          <div class="sub-category">Category 2</div>
+          <div class="sub-category">Category 3</div>
+          <div class="sub-category">Category 4</div>
+          <div class="sub-category">Category 5</div>
+          <div class="sub-category">Category 1</div>
+          <div class="sub-category">Category 2</div>
+          <div class="sub-category">Category 3</div>
+          <div class="sub-category">Category 4</div>
+          <div class="sub-category">Category 5</div>
         </div>
-        <!-- course cards -->
-            <div class="course-cards">
-                    <div class="course-card">
-                        <div class="course-details">
-                          <h2 class="course-title">Advanced English</h2>
-                          <p class="course-description">A brief summary of what the course offers, including key topics covered.</p>
-                          <div class="course-meta">
-                            <p><strong class="in-detail">Duration:</strong> 6 Weeks</p>
-                            <p><strong class="in-detail">Difficulty:</strong> Intermediate</p>
-                            <p><strong class="in-detail">Price:</strong> $99</p>
-                            <p><strong class="in-detail">Start Date:</strong> Jan 1, 2025</p>
-                            <p><strong class="in-detail">Format:</strong> Online, Self-paced</p>
-                            <p><strong class="in-detail">Skills Learned:</strong> HTML, CSS, JavaScript</p>
-                          </div>
-                          <div class="course-footer">
-                            <div class="course-rating">
-                              <span>⭐⭐⭐⭐⭐ (120 reviews)</span>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- course card 2 -->
-                      <div class="course-card">
-                        <div class="course-details">
-                          <h2 class="course-title">Mathematicss</h2>
-                          <p class="course-description">A brief summary of what the course offers, including key topics covered.</p>
-                          <div class="course-meta">
-                            <p><strong class="in-detail">Duration:</strong> 6 Weeks</p>
-                            <p><strong class="in-detail">Difficulty:</strong> Intermediate</p>
-                            <p><strong class="in-detail">Price:</strong> $99</p>
-                            <p><strong class="in-detail">Start Date:</strong> Jan 1, 2025</p>
-                            <p><strong class="in-detail">Format:</strong> Online, Self-paced</p>
-                            <p><strong class="in-detail">Skills Learned:</strong> HTML, CSS, JavaScript</p>
-                          </div>
-                          <div class="course-footer">
-                            <div class="course-rating">
-                              <span>⭐⭐⭐⭐⭐ (120 reviews)</span>
-                            </div>
-                            
-                          </div>
-                        </div>
-                      </div>
-                      <!-- course 3 -->
-                      <div class="course-card">
-                        <div class="course-details">
-                          <h2 class="course-title">Course Title</h2>
-                          <p class="course-description">A brief summary of what the course offers, including key topics covered.</p>
-                          <div class="course-meta">
-                            <p><strong class="in-detail">Duration:</strong> 6 Weeks</p>
-                            <p><strong class="in-detail">Difficulty:</strong> Intermediate</p>
-                            <p><strong class="in-detail">Price:</strong> $99</p>
-                            <p><strong class="in-detail">Start Date:</strong> Jan 1, 2025</p>
-                            <p><strong class="in-detail">Format:</strong> Online, Self-paced</p>
-                            <p><strong class="in-detail">Skills Learned:</strong> HTML, CSS, JavaScript</p>
-                          </div>
-                          <div class="course-footer">
-                            <div class="course-rating">
-                              <span>⭐⭐⭐⭐⭐ (120 reviews)</span>
-                            </div>
-                            
-                          </div>
-                        </div>
-                      </div>
-                      <!-- course 4 -->
-                      <div class="course-card">
-                        <div class="course-details">
-                          <h2 class="course-title">Course Title</h2>
-                          <p class="course-description">A brief summary of what the course offers, including key topics covered.</p>
-                          <div class="course-meta">
-                            <p><strong class="in-detail">Duration:</strong> 6 Weeks</p>
-                            <p><strong class="in-detail">Difficulty:</strong> Intermediate</p>
-                            <p><strong class="in-detail">Price:</strong> $99</p>
-                            <p><strong class="in-detail">Start Date:</strong> Jan 1, 2025</p>
-                            <p><strong class="in-detail">Format:</strong> Online, Self-paced</p>
-                            <p><strong class="in-detail">Skills Learned:</strong> HTML, CSS, JavaScript</p>
-                          </div>
-                          <div class="course-footer">
-                            <div class="course-rating">
-                              <span>⭐⭐⭐⭐⭐ (120 reviews)</span>
-                            </div>
-                            
-                          </div>
-                        </div>
-                      </div>
-                      <!-- course 5 -->
-                      <div class="course-card">
-                        <div class="course-details">
-                          <h2 class="course-title">Course Title</h2>
-                          <p class="course-description">A brief summary of what the course offers, including key topics covered.</p>
-                          <div class="course-meta">
-                            <p><strong class="in-detail">Duration:</strong> 6 Weeks</p>
-                            <p><strong class="in-detail">Difficulty:</strong> Intermediate</p>
-                            <p><strong class="in-detail">Price:</strong> $99</p>
-                            <p><strong class="in-detail">Start Date:</strong> Jan 1, 2025</p>
-                            <p><strong class="in-detail">Format:</strong> Online, Self-paced</p>
-                            <p><strong class="in-detail">Skills Learned:</strong> HTML, CSS, JavaScript</p>
-                          </div>
-                          <div class="course-footer">
-                            <div class="course-rating">
-                              <span>⭐⭐⭐⭐⭐ (120 reviews)</span>
-                            </div>
-                            
-                          </div>
-                        </div>
-                      </div>
-                      <!-- course 6 -->
-                      <div class="course-card">
-                        <div class="course-details">
-                          <h2 class="course-title">Course Title</h2>
-                          <p class="course-description">A brief summary of what the course offers, including key topics covered.</p>
-                          <div class="course-meta">
-                            <p><strong class="in-detail">Duration:</strong> 6 Weeks</p>
-                            <p><strong class="in-detail">Difficulty:</strong> Intermediate</p>
-                            <p><strong class="in-detail">Price:</strong> $99</p>
-                            <p><strong class="in-detail">Start Date:</strong> Jan 1, 2025</p>
-                            <p><strong class="in-detail">Format:</strong> Online, Self-paced</p>
-                            <p><strong class="in-detail">Skills Learned:</strong> HTML, CSS, JavaScript</p>
-                          </div>
-                          <div class="course-footer">
-                            <div class="course-rating">
-                              <span>⭐⭐⭐⭐⭐ (120 reviews)</span>
-                            </div>
-                            
-                          </div>
-                        </div>
-                      </div>
+      </div>
+      <!-- course cards -->
+      <div class="course-cards">
+        <div class="course-card">
+          <div class="course-details">
+            <h2 class="course-title">Advanced English</h2>
+            <p class="course-description">A brief summary of what the course offers, including key topics covered.</p>
+            <div class="course-meta">
+              <p><strong class="in-detail">Duration:</strong> 6 Weeks</p>
+              <p><strong class="in-detail">Difficulty:</strong> Intermediate</p>
+              <p><strong class="in-detail">Price:</strong> $99</p>
+              <p><strong class="in-detail">Start Date:</strong> Jan 1, 2025</p>
+              <p><strong class="in-detail">Format:</strong> Online, Self-paced</p>
+              <p><strong class="in-detail">Skills Learned:</strong> HTML, CSS, JavaScript</p>
             </div>
-            <a href="#" class="show-more">Show More</a>
+            <div class="course-footer">
+              <div class="course-rating">
+                <span>⭐⭐⭐⭐⭐ (120 reviews)</span>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    
-    <!-- Registration Section -->
-    <section id="registration" class="registration-container">
-      <div class="container">
+        <!-- course card 2 -->
+        <div class="course-card">
+          <div class="course-details">
+            <h2 class="course-title">Mathematicss</h2>
+            <p class="course-description">A brief summary of what the course offers, including key topics covered.</p>
+            <div class="course-meta">
+              <p><strong class="in-detail">Duration:</strong> 6 Weeks</p>
+              <p><strong class="in-detail">Difficulty:</strong> Intermediate</p>
+              <p><strong class="in-detail">Price:</strong> $99</p>
+              <p><strong class="in-detail">Start Date:</strong> Jan 1, 2025</p>
+              <p><strong class="in-detail">Format:</strong> Online, Self-paced</p>
+              <p><strong class="in-detail">Skills Learned:</strong> HTML, CSS, JavaScript</p>
+            </div>
+            <div class="course-footer">
+              <div class="course-rating">
+                <span>⭐⭐⭐⭐⭐ (120 reviews)</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- course 3 -->
+        <div class="course-card">
+          <div class="course-details">
+            <h2 class="course-title">Course Title</h2>
+            <p class="course-description">A brief summary of what the course offers, including key topics covered.</p>
+            <div class="course-meta">
+              <p><strong class="in-detail">Duration:</strong> 6 Weeks</p>
+              <p><strong class="in-detail">Difficulty:</strong> Intermediate</p>
+              <p><strong class="in-detail">Price:</strong> $99</p>
+              <p><strong class="in-detail">Start Date:</strong> Jan 1, 2025</p>
+              <p><strong class="in-detail">Format:</strong> Online, Self-paced</p>
+              <p><strong class="in-detail">Skills Learned:</strong> HTML, CSS, JavaScript</p>
+            </div>
+            <div class="course-footer">
+              <div class="course-rating">
+                <span>⭐⭐⭐⭐⭐ (120 reviews)</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- course 4 -->
+        <div class="course-card">
+          <div class="course-details">
+            <h2 class="course-title">Course Title</h2>
+            <p class="course-description">A brief summary of what the course offers, including key topics covered.</p>
+            <div class="course-meta">
+              <p><strong class="in-detail">Duration:</strong> 6 Weeks</p>
+              <p><strong class="in-detail">Difficulty:</strong> Intermediate</p>
+              <p><strong class="in-detail">Price:</strong> $99</p>
+              <p><strong class="in-detail">Start Date:</strong> Jan 1, 2025</p>
+              <p><strong class="in-detail">Format:</strong> Online, Self-paced</p>
+              <p><strong class="in-detail">Skills Learned:</strong> HTML, CSS, JavaScript</p>
+            </div>
+            <div class="course-footer">
+              <div class="course-rating">
+                <span>⭐⭐⭐⭐⭐ (120 reviews)</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- course 5 -->
+        <div class="course-card">
+          <div class="course-details">
+            <h2 class="course-title">Course Title</h2>
+            <p class="course-description">A brief summary of what the course offers, including key topics covered.</p>
+            <div class="course-meta">
+              <p><strong class="in-detail">Duration:</strong> 6 Weeks</p>
+              <p><strong class="in-detail">Difficulty:</strong> Intermediate</p>
+              <p><strong class="in-detail">Price:</strong> $99</p>
+              <p><strong class="in-detail">Start Date:</strong> Jan 1, 2025</p>
+              <p><strong class="in-detail">Format:</strong> Online, Self-paced</p>
+              <p><strong class="in-detail">Skills Learned:</strong> HTML, CSS, JavaScript</p>
+            </div>
+            <div class="course-footer">
+              <div class="course-rating">
+                <span>⭐⭐⭐⭐⭐ (120 reviews)</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- course 6 -->
+        <div class="course-card">
+          <div class="course-details">
+            <h2 class="course-title">Course Title</h2>
+            <p class="course-description">A brief summary of what the course offers, including key topics covered.</p>
+            <div class="course-meta">
+              <p><strong class="in-detail">Duration:</strong> 6 Weeks</p>
+              <p><strong class="in-detail">Difficulty:</strong> Intermediate</p>
+              <p><strong class="in-detail">Price:</strong> $99</p>
+              <p><strong class="in-detail">Start Date:</strong> Jan 1, 2025</p>
+              <p><strong class="in-detail">Format:</strong> Online, Self-paced</p>
+              <p><strong class="in-detail">Skills Learned:</strong> HTML, CSS, JavaScript</p>
+            </div>
+            <div class="course-footer">
+              <div class="course-rating">
+                <span>⭐⭐⭐⭐⭐ (120 reviews)</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="show-more">Show More</a>
+    </div>
+  </section>
+
+  <!-- Registration Section -->
+  <section id="registration" class="registration-container">
+    <div class="container">
       <div class="heading-container">
         <h2 class="section-headings">Register Now</h2>
         <p class="tagline">Join our platform today and start learning or teaching</p>
       </div>
-        <div class="registration">
-          <h2 class="registration-type">Student Registration</h2>
-          <form action="#" method="post">
-              <!-- Personal Information -->
-              <div class="form-group">
-                  <label for="fullName">Full Name *</label>
-                  <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
-              </div>
-  
-              <div class="form-group">
-                  <label for="email">Email Address *</label>
-                  <input type="email" id="email" name="email" placeholder="Enter your email" required>
-              </div>
-  
-              <div class="form-group">
-                  <label for="phone">Phone Number *</label>
-                  <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
-              </div>
-  
-              <div class="form-group">
-                  <label for="dob">Date of Birth *</label>
-                  <input type="date" id="dob" name="dob" required>
-              </div>
-  
-              <div class="form-group">
-                  <label for="gender">Gender</label>
-                  <select id="gender" name="gender">
-                      <option value="">Select</option>
-                      <option value="male">Male</option>
-                      <option value="female">Female</option>
-                      <option value="other">Other</option>
-                      <option value="prefer">Prefer not to say</option>
-                  </select>
-              </div>
-  
-              <!-- Course Details -->
-              <div class="form-group">
-                  <label for="course">Select Course *</label>
-                  <select id="course" name="course" required>
-                      <option value="">Choose a course</option>
-                      <option value="webdev">Web Development</option>
-                      <option value="datasci">Data Science</option>
-                      <option value="graphicdesign">Graphic Design</option>
-                  </select>
-              </div>
-  
-              <div class="form-group">
-                  <label for="startDate">Preferred Start Date And Time *</label>
-                  <input type="datetime-local" id="startDate" name="startDate" required>
-              </div>
-  
-              <!-- Educational Background -->
-              <div class="form-group">
-                  <label for="education">Highest Qualification</label>
-                  <select id="education" name="education">
-                      <option value="">Select</option>
-                      <option value="highschool">High School</option>
-                      <option value="undergraduate">Undergraduate</option>
-                      <option value="postgraduate">Postgraduate</option>
-                  </select>
-              </div>
-  
-              <!-- Consent -->
-              <div class="form-group">
-                  <label><input type="checkbox" required> I agree to receive course-related updates via Call/Email/SMS </label>
-              </div>
-  
-              <!-- Submit Button -->
-              <button class="btn"type="submit">Register Now</button>
-              
-          </form>
-          <small>* Required fields</small>
-      </div>
-      
-    </div>
-    <!-- ------------------------------------------------------------------- -->
-     <div class="container">
-    <div class="registration">
-      <h2 class="registration-type">Trainer Registration</h2>
-      <form action="#" method="POST" enctype="multipart/form-data">
+      <div class="registration">
+        <h2 class="registration-type">Student Registration</h2>
+        <form action="#" method="post">
           <!-- Personal Information -->
           <div class="form-group">
-            <div class="form-group">
-              <label for="photo">Upload Photo</label>
-              <input type="file" id="photo" name="photo" accept="image/*" required>
-              </div>
-          <label for="fullName">Full Name</label>
-          <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
           </div>
 
           <div class="form-group">
-          <label for="dob">Date of Birth</label>
-          <input type="date" id="dob" name="dob" required>
-        </div>
-
-        <div class="form-group">
-          <label for="contact">Phone Number</label>
-          <input type="tel" id="contact" name="contact" placeholder="Enter phone number" required>
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
           </div>
 
           <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Enter your email" required>
-        </div>
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+          </div>
 
-        <div class="form-group">
-          <label for="gender">Gender</label>
-          <select id="gender" name="gender" required>
+          <div class="form-group">
+            <label for="dob">Date of Birth *</label>
+            <input type="date" id="dob" name="dob" required>
+          </div>
+
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
+              <option value="">Select</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+              <option value="prefer">Prefer not to say</option>
+            </select>
+          </div>
+
+          <!-- Course Details -->
+          <div class="form-group">
+            <label for="course">Select Course *</label>
+            <select id="course" name="course" required>
+              <option value="">Choose a course</option>
+              <option value="webdev">Web Development</option>
+              <option value="datasci">Data Science</option>
+              <option value="graphicdesign">Graphic Design</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="startDate">Preferred Start Date And Time *</label>
+            <input type="datetime-local" id="startDate" name="startDate" required>
+          </div>
+
+          <!-- Educational Background -->
+          <div class="form-group">
+            <label for="education">Highest Qualification</label>
+            <select id="education" name="education">
+              <option value="">Select</option>
+              <option value="highschool">High School</option>
+              <option value="undergraduate">Undergraduate</option>
+              <option value="postgraduate">Postgraduate</option>
+            </select>
+          </div>
+
+          <!-- Consent -->
+          <div class="form-group">
+            <label><input type="checkbox" required> I agree to receive course-related updates via Call/Email/SMS
+            </label>
+          </div>
+
+          <div class="form-group">
+            <!-- Submit Button -->
+            <button class="btn" type="submit">Register Now</button>
+          </div>
+          <small>* Required fields</small>
+        </form>
+
+      </div>
+
+    </div>
+    <!-- ------------------------------------------------------------------- -->
+    <div class="container">
+      <div class="registration">
+        <h2 class="registration-type">Trainer Registration</h2>
+        <form action="#" method="POST" enctype="multipart/form-data">
+          <!-- Personal Information -->
+          <div class="form-group">
+            <label for="fullName">Full Name *</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="dob">Date of Birth *</label>
+            <input type="date" id="dob" name="dob" required>
+          </div>
+
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <select id="gender" name="gender">
               <option value="">Select Gender</option>
               <option value="Male">Male</option>
               <option value="Female">Female</option>
               <option value="Other">Other</option>
-          </select>
+            </select>
           </div>
-   
-        <div class="form-group">
+
+          <div class="form-group">
+            <label for="photo">Upload Photo *</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+          </div>
+        
+          <div class="form-group">
+            <label for="contact">Phone Number *</label>
+            <input type="tel" id="contact" name="contact" placeholder="Enter phone number" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          </div>
+
           <!-- Professional Information -->
-          <label for="specialization">Specialization/Area of Expertise</label>
-          <input type="text" id="specialization" name="specialization" placeholder="E.g., Yoga, Fitness, Coding" required>
-        </div>
+          <div class="form-group">
+            <label for="specialization">Specialization/Area of Expertise *</label>
+            <input type="text" id="specialization" name="specialization" placeholder="E.g., Yoga, Fitness, Coding"
+              required>
+          </div>
 
-        <div class="form-group">
-          <label for="experience">Total Years of Experience</label>
-          <input type="number" id="experience" name="experience" placeholder="Enter years of experience" min="0" required>
-        </div>
+          <!-- Qualification  -->
+          <div class="form-group">
+            <label for="qualification">Qualification *</label>
+            <select id="qualification" name="qualification" required>
+                <option value="">Select Qualification</option>
+                <option value="Bachelors in Physical Education">Bachelors in Physical Education</option>
+                <option value="Masters in Physical Education">Masters in Physical Education</option>
+                <option value="Certified Yoga Instructor">Certified Yoga Instructor</option>
+                <option value="Certified Fitness Trainer">Certified Fitness Trainer</option>
+                <option value="Nutrition and Wellness Certification">Nutrition and Wellness Certification</option>
+                <option value="Coding Bootcamp Graduate">Coding Bootcamp Graduate</option>
+                <option value="Teaching Certification">Teaching Certification</option>
+            </select>
+          </div>
 
-        <div class="form-group">
-          <!-- Audio Upload -->
-          <label for="audioNote">Upload Audio Note *</label>
-          <input type="file" id="audioNote" name="audioNote" accept="audio/*" required>
-        </div>
+          <div class="form-group">
+            <label for="experience">Total Years of Experience</label>
+            <input type="number" id="experience" name="experience" placeholder="Enter years of experience" min="0">
+          </div>
 
-        <div class="form-group">
-          <label for="headline">Profile Headline/Tagline</label>
-          <input type="text" id="headline" name="headline" placeholder="E.g., Certified Yoga Instructor">
+          <div class="form-group">
+            <label for="courses">Courses Interested to Teach *</label>
+            <select id="courses" name="courses" multiple required>
+                <option value="Yoga">Yoga</option>
+                <option value="Fitness Training">Fitness Training</option>
+                <option value="Nutrition Guidance">Nutrition Guidance</option>
+                <option value="Coding Basics">Coding Basics</option>
+                <option value="Advanced Programming">Advanced Programming</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="Science">Science</option>
+            </select>
         </div>
+        
 
-        <div class="form-group">
-          <!-- Availability & Teaching Details -->
-          <label for="teachingMode">Preferred Mode of Teaching</label>
-          <select id="teachingMode" name="teachingMode" required>
+          <div class="form-group">
+            <label for="headline">Profile Headline/Tagline *</label>
+            <input type="text" id="headline" name="headline" placeholder="E.g., Certified Yoga Instructor" required>
+          </div>
+          
+
+           <!-- Availability & Teaching Details -->
+            <div class="form-group radio-group">
+              <label>Preferred Work Type *</label>
+              <input type="radio" id="fullTime" name="workType" value="Full-Time" required>
+              <label for="fullTime" style="font-weight: normal;">Full-Time</label>
+              <input type="radio" id="partTime" name="workType" value="Part-Time" required>
+
+              <label for="partTime" style="font-weight: normal;">Part-Time</label>
+            </div>
+
+       
+            <!-- Availability & Teaching Details -->
+            <div class="form-group">
+            <label for="teachingMode">Preferred Mode of Teaching *</label>
+            <select id="teachingMode" name="teachingMode" required>
               <option value="">Select Teaching Mode</option>
-              <option value="Online">Online</option>
+              <option value="Online">Online (Zoom meet)</option>
+              <option value="Online">Online (Whatsapp)</option>
               <option value="In-Person">In-Person</option>
               <option value="Hybrid">Hybrid</option>
-          </select>
+            </select>
           </div>
 
           <div class="form-group">
-          <label for="availability">Availability (Days & Time Slots)</label>
-          <textarea id="availability" name="availability" rows="3" placeholder="E.g., Mon-Fri, 9 AM - 12 PM"></textarea>
+            <label for="availability">Availability (Days & Time Slots) *</label>
+            <textarea id="availability" name="availability" rows="3" placeholder="E.g., Mon-Fri, 9 AM - 12 PM"
+              required></textarea>
           </div>
 
-        <div class="form-group">
-          <!-- Consent and Submission -->
-          <label>
+          <div class="form-group">
+            <!-- Audio Upload -->
+            <label for="audioNote">Upload Audio Note (Self-Introduction) *</label>
+            <input type="file" id="audioNote" name="audioNote" accept="audio/*" required>
+          </div>
+
+          <div class="form-group">
+            <!-- Consent and Submission -->
+            <label>
               <input type="checkbox" name="agreement" required>
               I agree to the Terms & Conditions and consent to display my profile publicly.
-          </label>
+            </label>
           </div>
           <div class="form-group">
-          <button class="btn" type="submit">Submit Application</button>
+            <button class="btn" type="submit">Submit Application</button>
           </div>
-      </form>
-      <small>* Required fields</small>
+        </form>
+        <small>* Required fields</small>
+      </div>
     </div>
-  </div>
-    </section>
-    
-    <!-- Trainer Profile Section -->
-    <section id="trainers" class="trainer-profile">
-      <div class="container">
+  </section>
+
+  <!-- Trainer Profile Section -->
+  <section id="trainers" class="trainer-profile">
+    <div class="container">
       <div class="heading-container">
         <h2 class="section-headings">Get to Know Our Trainers</h2>
         <p class="tagline">Learn from Experts Who Inspire and Guide You</p>
       </div>
-    
+
       <div class="trainer-cards">
         <!-- Trainer Card 1 -->
         <div class="trainer-card">
@@ -472,7 +550,8 @@
           <h3 class="trainer-name">John Doe</h3>
           <p class="trainer-title">Certified Yoga Instructor</p>
           <p class="trainer-bio">
-            Passionate yoga instructor with 8+ years of experience helping clients improve flexibility, strength, and mindfulness.
+            Passionate yoga instructor with 8+ years of experience helping clients improve flexibility, strength, and
+            mindfulness.
           </p>
           <div class="trainer-details">
             <p><strong class="trainer-side-heading">Experience:</strong> 8+ Years</p>
@@ -482,14 +561,15 @@
           </div>
           <button class="btn">Book a Demo Session</button>
         </div>
-    
+
         <!-- Trainer Card 2 -->
         <div class="trainer-card">
           <img src="./assets/slider-img-1.png" alt="Trainer Photo" class="trainer-photo">
           <h3 class="trainer-name">John Doe</h3>
           <p class="trainer-title">Certified Yoga Instructor</p>
           <p class="trainer-bio">
-            Passionate yoga instructor with 8+ years of experience helping clients improve flexibility, strength, and mindfulness.
+            Passionate yoga instructor with 8+ years of experience helping clients improve flexibility, strength, and
+            mindfulness.
           </p>
           <div class="trainer-details">
             <p><strong class="trainer-side-heading">Experience:</strong> 8+ Years</p>
@@ -499,14 +579,15 @@
           </div>
           <button class="btn">Book a Demo Session</button>
         </div>
-    
+
         <!-- Trainer card 3 -->
         <div class="trainer-card">
           <img src="./assets/slider-img-1.png" alt="Trainer Photo" class="trainer-photo">
           <h3 class="trainer-name">John Doe</h3>
           <p class="trainer-title">Certified Yoga Instructor</p>
           <p class="trainer-bio">
-            Passionate yoga instructor with 8+ years of experience helping clients improve flexibility, strength, and mindfulness.
+            Passionate yoga instructor with 8+ years of experience helping clients improve flexibility, strength, and
+            mindfulness.
           </p>
           <div class="trainer-details">
             <p><strong class="trainer-side-heading">Experience:</strong> 8+ Years</p>
@@ -522,47 +603,50 @@
           <h3 class="trainer-name">John Doe</h3>
           <p class="trainer-title">Certified Yoga Instructor</p>
           <p class="trainer-bio">
-            Passionate yoga instructor with 8+ years of experience helping clients improve flexibility, strength, and mindfulness.
+            Passionate yoga instructor with 8+ years of experience helping clients improve flexibility, strength, and
+            mindfulness.
           </p>
           <div class="trainer-details">
             <p><strong class="trainer-side-heading">Experience:</strong> 8+ Years</p>
             <p><strong class="trainer-side-heading">Specialization:</strong> Yoga, Meditation, Nutrition</p>
             <p><strong class="trainer-side-heading">Mode of Class:</strong> Whatsapp, Zoom, Offline</p>
-            <p><strong class="trainer-side-heading">Availability:</strong> Mon-Fri (8 AM - 6 PM), Sat (10 AM - 4 PM) , on all days</p>
+            <p><strong class="trainer-side-heading">Availability:</strong> Mon-Fri (8 AM - 6 PM), Sat (10 AM - 4 PM) ,
+              on all days</p>
           </div>
           <button class="btn">Book a Demo Session</button>
         </div>
       </div>
-    
+
       <a href="#" class="show-more">Show More</a>
     </div>
-    </section>
-    
-    <!-- Review Section -->
-    <section id="reviews" class="reviews">
-        <div class="container">
-            <div class="heading-container">
-                <h2 class="section-headings">Student Voices & Experiences</h2>
-               <p class="tagline">See What Our Students Have to Say!</p>
-            </div>
-            <div class="review-carousel">
-                <div class="review-card">Review 1</div>
-                <div class="review-card">Review 2</div>
-            </div>
-            <a href="#" class="add-review">Add Review</a>
-            <div class="media-reviews">
-                <div class="audio-review">Audio Review 1</div>
-                <div class="video-review">Video Review 1</div>
-            </div>
-        </div>
-    </section>
-    
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>About Us | Contact Us | Privacy Policy</p>
-        </div>
-    </footer>
-    
+  </section>
+
+  <!-- Review Section -->
+  <section id="reviews" class="reviews">
+    <div class="container">
+      <div class="heading-container">
+        <h2 class="section-headings">Student Voices & Experiences</h2>
+        <p class="tagline">See What Our Students Have to Say!</p>
+      </div>
+      <div class="review-carousel">
+        <div class="review-card">Review 1</div>
+        <div class="review-card">Review 2</div>
+      </div>
+      <a href="#" class="add-review">Add Review</a>
+      <div class="media-reviews">
+        <div class="audio-review">Audio Review 1</div>
+        <div class="video-review">Video Review 1</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>About Us | Contact Us | Privacy Policy</p>
+    </div>
+  </footer>
+
 </body>
+
 </html>

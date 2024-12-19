@@ -98,9 +98,11 @@
     width: 100%;
     text-align: center;
   }
-  .hamburger {
+  .hamburger-btn {
     display: flex;
   }
+
+
   /* Slider Styles */
   .slide__header {
     font-size: 2.6rem;
@@ -204,7 +206,7 @@
   .logoImg {
     max-height: 3.5rem;
   }
-  .menu-burger {
+  .menu-burger-open {
     font-size: 1.9rem;
   }
   /* Slider Styles */
@@ -372,7 +374,7 @@
 }
 @media (max-width: 430px) {
   /* HEADER */
-  .menu-burger {
+  .menu-burger-open {
     font-size: 1.6rem;
   }
   .logoImg {
@@ -457,7 +459,7 @@
     max-height: 2rem;
     width: auto;
   }
-  .menu-burger {
+  .menu-burger-open {
     font-size: 1.2rem;
   }
   .login-btn {
@@ -516,7 +518,7 @@
     max-height: 1.8rem;
     width: auto;
   }
-  .menu-burger {
+  .menu-burger-open {
     font-size: 1rem;
   }
   .login-btn {
@@ -547,3 +549,22 @@
 }
 
 /* ----------- */
+
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .registration {
+    max-width: 90%;
+    padding: 30px;
+  }
+
+  .heading-container .section-headings {
+    font-size: 28px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 14px;
+  }
+}
