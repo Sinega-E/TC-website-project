@@ -9,9 +9,9 @@ const childSliders = document.querySelectorAll(".child-slide");
 const dotContainer = document.querySelector(".dots");
 // ------------------------------------Toggle the side menu------------------------------------
 document.getElementById("menu-open-btn").addEventListener("click", function () {
-  menu.classList.toggle("open");
+  menu.classList.add("open");
   if(menu.classList.contains("open")){
-    menuButtonIconOpen.style.display="none"
+    menuButtonIconOpen.style.display="block"
   }
 });
 
@@ -141,4 +141,34 @@ document.querySelectorAll(".sub-category").forEach((item) => {
       .forEach((sub) => sub.classList.remove("active"));
     this.classList.add("active");
   });
+});
+// registration dropdown checkbox
+
+function filterCourses() {
+  const searchInput = document.getElementById('courseSearch').value.toLowerCase();
+  const courseLabels = document.querySelectorAll('.dropdown-content label');
+  
+  courseLabels.forEach(function(label) {
+    const courseName = label.textContent || label.innerText;
+    if (courseName.toLowerCase().indexOf(searchInput) > -1) {
+      label.style.display = '';
+    } else {
+      label.style.display = 'none';
+    }
+  });
+}
+
+document.querySelector('.dropdown-button').addEventListener('click', function () {
+  const dropdownContent = document.querySelector('.dropdown-content');
+  dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
+});
+
+// Close the dropdown if the user clicks outside
+window.addEventListener('click', function (event) {
+  if (!event.target.matches('.dropdown-button')) {
+    const dropdowns = document.querySelectorAll('.dropdown-content');
+    dropdowns.forEach(function (dropdown) {
+      dropdown.style.display = 'none';
+    });
+  }
 });

@@ -17,8 +17,7 @@
     href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
   <link rel='stylesheet'
     href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-straight/css/uicons-bold-straight.css'>
-
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
 
   <script defer src="script.js"></script>
   <title>Talky Community</title>
@@ -46,7 +45,7 @@
     <!-- hamburger menu -->
     <div class="menu" id="menu">
       <button class="hamburger-btn menu-burger-close" id="menu-close-btn" aria-label="Toggle Header Menu">
-        <i class="fi fi-bs-cross-small menu-burger-close-icon"></i>
+        <i class="fi fi-br-cross-small menu-burger-close-icon"></i>
       </button>
         <nav>
         <ul>
@@ -319,6 +318,9 @@
         <p class="tagline">Join our platform today and start learning or teaching</p>
       </div>
       <div class="registration">
+        <div>
+          <button>Student Registration Form</button><button>Trainer Registration Form</button>
+        </div>
         <h2 class="registration-type">Student Registration</h2>
         <form action="#" method="post">
           <!-- Personal Information -->
@@ -466,16 +468,26 @@
 
           <div class="form-group">
             <label for="courses">Courses Interested to Teach *</label>
-            <select id="courses" name="courses" multiple required>
-                <option value="Yoga">Yoga</option>
-                <option value="Fitness Training">Fitness Training</option>
-                <option value="Nutrition Guidance">Nutrition Guidance</option>
-                <option value="Coding Basics">Coding Basics</option>
-                <option value="Advanced Programming">Advanced Programming</option>
-                <option value="Mathematics">Mathematics</option>
-                <option value="Science">Science</option>
-            </select>
-        </div>
+            <div class="dropdown">
+              <button class="dropdown-button">Select Courses</button>
+              <div class="dropdown-content">
+                <!-- Search Input -->
+                <input type="text" id="courseSearch" class="search-input" placeholder="Search courses..." onkeyup="filterCourses()">
+                
+                <!-- Checkbox List -->
+                <label><input type="checkbox" name="courses" value="Yoga"> Yoga</label>
+                <label><input type="checkbox" name="courses" value="Fitness Training"> Fitness Training</label>
+                <label><input type="checkbox" name="courses" value="Nutrition Guidance"> Nutrition Guidance</label>
+                <label><input type="checkbox" name="courses" value="Coding Basics"> Coding Basics</label>
+                <label><input type="checkbox" name="courses" value="Advanced Programming"> Advanced Programming</label>
+                <label><input type="checkbox" name="courses" value="Mathematics"> Mathematics</label>
+                <label><input type="checkbox" name="courses" value="Science"> Science</label>
+              </div>
+            </div>
+          </div>
+          
+          
+          
         
 
           <div class="form-group">

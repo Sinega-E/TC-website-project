@@ -102,6 +102,9 @@
     display: flex;
   }
 
+  /* .menu-burger-open{
+    display: block;
+  } */
 
   /* Slider Styles */
   .slide__header {
