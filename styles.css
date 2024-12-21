@@ -650,10 +650,10 @@ input, textarea, select {
   display: flex;
   gap: 1rem;
 }
-.stu-register-btn {
+.stu-register-btn,.trainer-register-btn {
   font-size: 1.13rem;
   font-weight: bolder;
-  padding: 0.8rem 0.5rem;
+  padding: 1rem 0.5rem;
   color: #433089c7;
   border: none;
   border-radius: 0.25rem;
@@ -663,13 +663,13 @@ input, textarea, select {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.stu-register-btn:hover {
+.stu-register-btn:hover, .trainer-register-btn:hover{
   color: #433089;
   background-color: #ebe6ff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 }
 
-.stu-register-btn:active {
+.stu-register-btn:active, .trainer-register-btn:active {
   transform: translateY(2px); /* Moves the button down */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow for pressed effect */
 }
@@ -850,6 +850,10 @@ button.dropdown-button {
   display: block;
 }
 
+/* form hidden trainer */
+.trainer-reg-container{
+  display: none;
+}
 /* Trainer Profile Section */
 /* -------------------------------------------------------------------------- */
 
