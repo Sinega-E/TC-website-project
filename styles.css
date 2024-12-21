@@ -390,12 +390,14 @@ input, textarea, select {
 }
 .tagline-review{
   margin: 0;
+  text-decoration: underline;
+  font-family: 'Ubuntu';
   text-align: center;
   padding-top: 0.5rem;
   padding-bottom: 1rem;
   font-size: 1.3rem;
   font-weight: 750;
-  color:var(--primary-color-darker);
+  color:var(--secondary-color-darker);
   line-height: 1.5;
 }
 .heading-container{
@@ -1005,6 +1007,76 @@ button.dropdown-button {
     }
 
 /* ---------------------------------------- */
+/* ACCORDION */
+.faqs-container{
+  background-color: #fffefa;
+}
+.accordion {
+  max-width: 60rem;
+  margin: 1.8rem auto;
+  border-radius: 30px; 
+}
+
+.accordion-item:last-child {
+  border-bottom: none;
+}
+
+.accordion-header {
+  font-family:'Ubuntu' ;
+  display: flex;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.8rem 1.5rem;
+  text-align: left;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 12px  rgb(0, 0,80, 0.1); 
+
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 800;
+  cursor: pointer;
+  transition:all 0.3s ease;
+  color: var(--primary-color-darker); 
+  border-radius: 80px; 
+}
+
+.accordion-header.active {
+  background-color:var(--primary-color);
+  color: #ffffff; 
+  box-shadow: 0 0 12px  rgb(235, 149, 0); 
+}
+
+.accordion-header:hover {
+  background-color:  rgb(235, 149, 0); 
+  color: #fff;
+}
+
+.accordion-header .icon {
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.accordion-content {
+  padding: 0 20px; 
+  background-color: #fef2f2;
+  color:var(--secondary-color-darker); 
+  overflow: hidden;
+  background-color: rgba(255, 162, 0, 0.159);;
+  max-height: 0; 
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.8;
+  border-radius: 0 0 1rem 1rem; 
+}
+
+.accordion-content p {
+  margin: 0;
+}
 
 /* Review Section */
 /* -------------------------------------------------------------------------- */

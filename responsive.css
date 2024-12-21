@@ -35,6 +35,19 @@
     max-width: 22rem;
     padding: 1.25rem;
   }
+  /* reviews */
+  .review-row {
+    gap: 1.5rem;
+  }
+
+  .review-card {
+    max-width: 100%;
+    flex: 0 0 48%; 
+  }
+  audio {
+    width: 280px;
+    height: 52px;
+}
 }
 @media screen and (max-width: 1050px) {
   /* HEADER */
@@ -222,7 +235,43 @@
   padding: 8px 0;
 }
 /* reviews */
+.review-row {
+  gap: 1.1rem;
+}
 
+.review-card {
+  max-width: 100%;
+  flex: 0 0 100%;
+}
+
+.carousel-row,
+.audio-row,
+.video-row {
+  padding-bottom: 1rem;
+  overflow-x: visible;
+}
+
+.review-carousel {
+  gap: 0.8rem;
+}
+
+.add-review {
+  width: 100%; 
+  text-align: center;
+}
+
+.review-profile img {
+  width: 30px;
+  height: 30px;
+}
+
+.review-profile-name-designation {
+  font-size: 0.8rem; 
+}
+audio {
+  width: 260px;
+  height: 47px;
+}
 
 }
 
@@ -520,6 +569,31 @@ small {
     padding: 5px 0;
   }
 
+/* review section */
+  .review-card {
+    padding: 1rem; 
+  }
+
+  .review-profile-name-designation {
+    font-size: 0.75rem;
+  }
+
+  .review-profile-name {
+    font-size: 1rem; 
+  }
+
+  .review-profile-designation {
+    font-size: 0.85rem;
+  }
+
+  .review-text {
+    font-size: 0.9rem; 
+  }
+  audio {
+    width: 200px;
+    height: 35px;
+}
+
 }
 @media (max-width: 460px) {
   /* Slider Styles */
@@ -680,7 +754,7 @@ small {
 
   .register-btn button {
     font-size: 11px;
-    padding: 3px 6px;
+    padding: 0.9rem 0.3rem;
     margin: 2px;
   }
 
@@ -797,87 +871,7 @@ small {
 
 /* Media Queries for Responsiveness */
 
-/* General Responsive Styles */
-@media (max-width: 1200px) {
-  .review-row {
-    gap: 1.5rem;
-  }
 
-  .review-card {
-    max-width: 100%;
-    flex: 0 0 48%; /* Adjust width for larger screens like tablets */
-  }
-  audio {
-    width: 280px;
-    height: 52px;
-}
-}
-
-@media (max-width: 768px) {
-  .review-row {
-    gap: 1.1rem;
-  }
-
-  .review-card {
-    max-width: 100%;
-    flex: 0 0 100%; /* Stack review cards on mobile */
-  }
-
-  .carousel-row,
-  .audio-row,
-  .video-row {
-    padding-bottom: 1rem;
-    overflow-x: visible;
-  }
-
-  .review-carousel {
-    gap: 0.8rem;
-  }
-
-  .add-review {
-    width: 100%; /* Make the Add Review button full width on small screens */
-    text-align: center;
-  }
-
-  .review-profile img {
-    width: 30px;
-    height: 30px;
-  }
-
-  .review-profile-name-designation {
-    font-size: 0.8rem; /* Smaller text for mobile */
-  }
-  audio {
-    width: 260px;
-    height: 47px;
-}
-}
-
-@media (max-width: 480px) {
-  .review-card {
-    padding: 1rem; /* Reduce padding for small screens */
-  }
-
-  .review-profile-name-designation {
-    font-size: 0.75rem; /* Smaller text for smaller screens */
-  }
-
-  .review-profile-name {
-    font-size: 1rem; /* Adjust the name size for readability */
-  }
-
-  .review-profile-designation {
-    font-size: 0.85rem; /* Smaller text for designation */
-  }
-
-  .review-text {
-    font-size: 0.9rem; /* Adjust the font size for mobile devices */
-  }
-  audio {
-    width: 200px;
-    height: 40px;
-}
-}
 
 
 

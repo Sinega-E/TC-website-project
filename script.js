@@ -204,3 +204,35 @@ document.querySelectorAll(".stu-register-btn").forEach((btn) => {
   });
 });
 
+// ACCORDION
+
+function toggleAccordion(button) {
+  const content = button.nextElementSibling;
+  const isActive = button.classList.contains('active');
+
+  // Collapse all other sections
+  document.querySelectorAll('.accordion-header').
+  forEach((btn) => btn.classList.remove('active'));
+
+  document.querySelectorAll('.accordion-content').
+  forEach((content) => {
+    content.style.maxHeight = null;
+    content.style.paddingTop = '0';
+    content.style.paddingBottom = '0';
+  });
+
+  document.querySelectorAll('.icon').forEach((icon) => {
+    icon.style.transform = 'rotate(0deg)';
+  });
+
+  // Expand the clicked section if not already active
+  if (!isActive) {
+    button.classList.add('active');
+    content.style.maxHeight = content.scrollHeight + 'px';
+    content.style.paddingTop = '20px';
+    content.style.paddingBottom = '20px';
+    button.querySelector('.icon').
+    style.transform = 'rotate(45deg)';
+  }
+}
+
