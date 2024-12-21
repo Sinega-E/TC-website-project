@@ -759,7 +759,7 @@ small {
   }
 
   .radio-group input[type="radio"] {
-    margin-right: -30px; /* Adjust spacing for compact layout */
+    margin-right: -30px; 
   }
 
   /* Consent Section Adjustments */
@@ -871,8 +871,87 @@ small {
 
 /* Media Queries for Responsiveness */
 
+/* FAQs Section Responsive Styling */
+@media screen and (max-width: 1024px) {
+  .accordion {
+    max-width: 50rem;
+    margin: 1.5rem auto;
+  }
 
+  .accordion-header {
+    font-size: 16px;
+    padding: 1.5rem 1.2rem;
+  }
 
+  .accordion-content p{
+    padding: 0 15px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .accordion {
+    max-width: 40rem;
+    margin: 1rem auto;
+  }
+
+  .accordion-header {
+    font-size: 14px;
+    padding: 1.2rem 1rem;
+  }
+
+  .accordion-content p{
+    padding: 0 12px;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .accordion {
+    max-width: 90%;
+    margin: 1rem auto;
+  }
+
+  .accordion-header {
+    font-size: 16px;
+    padding: 1rem 0.8rem;
+  }
+
+  .accordion-header .icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .accordion-content p {
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+@media screen and (max-width: 480px) {
+  .accordion {
+    max-width: 90%;
+    margin: 1rem auto;
+  }
+
+  .accordion-header {
+    font-size: 14px;
+    padding: 1rem 0.8rem;
+  }
+
+  .accordion-header .icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .accordion-content p {
+    padding: 0 10px;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+}
 
 
 
