@@ -674,8 +674,8 @@ small {
   }
 
   .registration-btn {
-    padding: 5px 10px;
-    font-size: 11px;
+    font-size: 0.85rem;
+    padding: 0.5rem 0.8rem;
   }
 
   .register-btn button {
