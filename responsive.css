@@ -815,7 +815,7 @@ small {
 
 @media (max-width: 768px) {
   .review-row {
-    gap: 1.5rem;
+    gap: 1.1rem;
   }
 
   .review-card {
@@ -826,12 +826,12 @@ small {
   .carousel-row,
   .audio-row,
   .video-row {
-    padding-bottom: 0;
+    padding-bottom: 1rem;
     overflow-x: visible;
   }
 
   .review-carousel {
-    gap: 1rem;
+    gap: 0.8rem;
   }
 
   .add-review {
@@ -840,8 +840,8 @@ small {
   }
 
   .review-profile img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
 
   .review-profile-name-designation {
