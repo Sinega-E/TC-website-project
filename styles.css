@@ -1051,13 +1051,10 @@ button.dropdown-button {
 
 .video-row {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: flex-start;
-  align-items: center;
   gap: 20px;
   padding-bottom: 1rem;
   overflow-x: auto;
-  overflow-y: hidden;
   scroll-snap-type: x proximity;
   margin: 0;
 }
@@ -1146,8 +1143,8 @@ button.dropdown-button {
 
 /* Additional Styles for Add Review Button */
 .add-review {
-  display: inline;
-  margin-top: 20px;
+  display: inline-block;
+  margin-top: 3rem;
   justify-content:center;
   padding: 0.5rem 0.5rem;
   text-align: center;
