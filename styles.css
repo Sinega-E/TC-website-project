@@ -33,6 +33,7 @@
 
 /* BODY TEXT */
 body {
+
     font-family: "Quicksand", sans-serif; 
     background-color:rgb(255, 255, 255);
     color: var(--text-color);
@@ -46,6 +47,9 @@ p {
 
 /* Container for each section */
 .container {
+  /* background-color: #fffefa; */
+  /* background-color: #ff585f2d; */
+
     width: 90%;
     max-width: 75rem;
     margin: 0 auto;
@@ -75,6 +79,7 @@ input, textarea, select {
 
 /* Container Header */
 .container-header {
+  
   max-width: 100%;
     gap: 2rem;
     display: flex;
@@ -383,6 +388,16 @@ input, textarea, select {
   color:var(--primary-color-darker);
   line-height: 1.5;
 }
+.tagline-review{
+  margin: 0;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 750;
+  color:var(--primary-color-darker);
+  line-height: 1.5;
+}
 .heading-container{
   border-top:#7739c282 1px solid;
   padding-top: 2.5rem;
@@ -390,7 +405,8 @@ input, textarea, select {
 }
 /* Courses Section Wrapper */
 .courses {
-  background-color: #fff7ee2d; 
+  background-color: #ff585f2d;
+
   padding:0;
 }
 /* course section button */
@@ -650,38 +666,46 @@ input, textarea, select {
   display: flex;
   gap: 1rem;
 }
+.stu-reg-container, .trainer-reg-container{
+  padding-top: 2rem;
+
+}
 .stu-register-btn,.trainer-register-btn {
-  font-size: 1.13rem;
+  font-family: "Quicksand", sans-serif; 
+  font-size: 1rem;
   font-weight: bolder;
-  padding: 1rem 0.5rem;
-  color: #433089c7;
+  padding: 0.8rem 0.5rem;
+  color: var(--secondary-color-darker);
   border: none;
   border-radius: 0.25rem;
+  background-color: white;
   cursor: pointer;
   transition: all 0.3s ease;
-  background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.stu-register-btn:hover, .trainer-register-btn:hover{
-  color: #433089;
-  background-color: #ebe6ff;
+.stu-register-btn:hover, .trainer-register-btn:hover, .btn-active{
+  color: #ffffff;
+  background-color: var(--primary-color);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
 }
 
 .stu-register-btn:active, .trainer-register-btn:active {
-  transform: translateY(2px); /* Moves the button down */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Reduced shadow for pressed effect */
+  transform: translateY(2px); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 /* ------------------------------------------------------------------------- */
 
 /* Registration Form */
+.registration-container{
+  background-color: #fffefa;
+
+}
 .registration {
   background-color: #fff;
   padding: 2.5rem;
   line-height: 1.3rem;
-
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 1, 0.1);
   max-width: 500px;
@@ -693,14 +717,16 @@ input, textarea, select {
 }
 
 .registration-type {
+  
   text-align: center;
   color: var(--primary-color);
   font-size: 1.8rem;
-  font-family: "Roboto", sans-serif;
+  font-family: "poppins";
   margin-bottom: 30px;
 }
 
 .form-group {
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -858,7 +884,7 @@ button.dropdown-button {
 /* -------------------------------------------------------------------------- */
 
 .trainer-profile{
-  background-color:  #fff7ee2d; 
+  background-color: #ff585f2d;
 }
 /* trainer profile Cards */
 .trainer-cards {
@@ -970,21 +996,180 @@ button.dropdown-button {
 
 /* Review Section */
 /* -------------------------------------------------------------------------- */
+/* Review Section Styles */
+.reviews{
+  background-color:var(--tertiary-color-opacity);
+
+}
+.review-container{
+  text-align: center;
+}
+/* Row Styles for Flex Layout */
+.review-row {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  gap: 2rem;
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+
+/* Carousel, Audio, and Video Rows */
+.carousel-row, .audio-row, .video-row {
+  overflow-x: auto; 
+  overflow-y: hidden;
+  flex-wrap: nowrap; 
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  padding-bottom: 1rem; 
+  scroll-snap-type: x mandatory; 
+}
+
+/* Add scrollable container styling */
+.carousel-row > .review-card,
+.audio-row > .review-card,
+.video-row > .review-card {
+  flex: 0 0 auto; 
+  max-width: 100%; 
+  min-width: 300px; 
+}
+
+/* Optional: Snap items to the center */
+.carousel-row > .review-card,
+.audio-row > .review-card,
+.video-row > .review-card {
+  scroll-snap-align: center;
+}
+
+/* Hide Scrollbar */
+.carousel-row::-webkit-scrollbar,
+.audio-row::-webkit-scrollbar,
+.video-row::-webkit-scrollbar {
+  display: none;
+}
+
+.video-row {
+  display: flex;
+  flex-wrap: nowrap; 
+  justify-content: start; 
+  align-items: center;
+  gap: 20px; 
+  padding-bottom: 1rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x proximity; 
+}
+
+.video-row > .review-card {
+  
+  flex: 0 0 auto; 
+  min-width: 300px; 
+  max-width: 300px;
+}
+/* Carousel for Text Reviews */
 .review-carousel {
-    display: flex;
-    justify-content: space-between;
+  
+  display: flex;
+  gap: 20px;
+  min-width: 100%;
+  justify-content: flex-start;
 }
 
+
+/* Review Card Styling */
 .review-card {
-    background-color: var(--bg-light);
-    padding: 1rem;
-    width: 48%;
+  flex: 0 0 auto; 
+  text-align: center;
+  max-width: 25rem; 
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  border-radius: 10px; 
+  padding: 1.5rem;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
 }
 
-.media-reviews {
-    display: flex;
-    gap: 2rem;
+.carousel-row::-webkit-scrollbar, .audio-row::-webkit-scrollbar, .video-row::-webkit-scrollbar{
+  display: none;
 }
+
+.review-card:hover {
+  transform: scale(1.05);
+}
+
+.review-text {
+  font-size: 1rem;
+  color: #333;
+}
+
+.review-profile {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.review-profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.review-profile-name-designation {
+  font-size: 0.9rem;
+}
+
+.review-profile-name {
+  text-align: left;
+  font-weight: bold;
+  margin: 0.3rem 0;
+
+}
+
+.review-profile-designation {
+  text-align: left;
+  margin: 0;
+  color: #888;
+}
+
+.audio-review,
+.video-review {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  text-align: left;
+}
+
+/* Additional Styles for Add Review Button */
+.add-review {
+  display: inline;
+  margin-top: 20px;
+  justify-content:center;
+  padding: 0.5rem 0.5rem;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color:var(--primary-color);
+  transition: all 0.3s ease-in-out;
+  border:var(--primary-color-darker) 1px solid;
+}
+
+.add-review:hover {
+  color: #ffffff;
+  background-color: var(--primary-color);
+}
+
+/* Media Query for Responsiveness */
+
 
 /* Footer */
 /* -------------------------------------------------------------------------- */

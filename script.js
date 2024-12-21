@@ -174,22 +174,33 @@ window.addEventListener('click', function (event) {
 });
 
 // trainer registration hidden and show on click
-
 document.querySelectorAll(".trainer-register-btn").forEach((btn) => {
   btn.addEventListener("click", function () {
-      const trainerFormContainer = document.querySelector(".trainer-reg-container");
-      const stuFormContainer = document.querySelector(".stu-reg-container");
-      trainerFormContainer.style.display = "block";
-      stuFormContainer.style.display = "none";
+    const trainerFormContainer = document.querySelector(".trainer-reg-container");
+    const stuFormContainer = document.querySelector(".stu-reg-container");
+
+    // Show trainer form, hide student form
+    trainerFormContainer.style.display = "block";
+    stuFormContainer.style.display = "none";
+
+    // Add active class to trainer button, remove from student button
+    document.querySelectorAll(".trainer-register-btn").forEach((btn) => btn.classList.add("btn-active"));
+    document.querySelectorAll(".stu-register-btn").forEach((btn) => btn.classList.remove("btn-active"));
   });
 });
 
 document.querySelectorAll(".stu-register-btn").forEach((btn) => {
   btn.addEventListener("click", function () {
-      const stuFormContainer = document.querySelector(".stu-reg-container");
-      const trainerFormContainer = document.querySelector(".trainer-reg-container");
-      stuFormContainer.style.display = "block";
-      trainerFormContainer.style.display = "none";
+    const stuFormContainer = document.querySelector(".stu-reg-container");
+    const trainerFormContainer = document.querySelector(".trainer-reg-container");
+
+    // Show student form, hide trainer form
+    stuFormContainer.style.display = "block";
+    trainerFormContainer.style.display = "none";
+
+    // Add btn-active class to student button, remove from trainer button
+    document.querySelectorAll(".stu-register-btn").forEach((btn) => btn.classList.add("btn-active"));
+    document.querySelectorAll(".trainer-register-btn").forEach((btn) => btn.classList.remove("btn-active"));
   });
 });
 
