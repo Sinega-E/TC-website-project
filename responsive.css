@@ -309,9 +309,9 @@ audio {
   }
 
   /* registration forms */
-  .registration {
+  /* .registration {
     padding: 15px;
-  }
+  } */
 
   .registration-type {
     font-size: 1.4rem;
