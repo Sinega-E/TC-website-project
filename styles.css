@@ -1014,7 +1014,7 @@ button.dropdown-button {
 .accordion {
   max-width: 60rem;
   margin: 1.8rem auto;
-  border-radius: 30px; 
+  border-radius: 100%; 
 }
 
 .accordion-item:last-child {
@@ -1030,7 +1030,7 @@ button.dropdown-button {
   line-height: 1.4rem;
   justify-content: space-between;
   width: 100%;
-  padding: 1.8rem 1.5rem;
+  padding: 1.4rem 1.7rem;
   text-align: left;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 0 12px  rgb(0, 0,80, 0.1); 
@@ -1057,7 +1057,10 @@ button.dropdown-button {
 }
 
 .accordion-header .icon {
-  font-size: 20px;
+  font-size: 3rem;
+  width: 16px;
+  height: 16px;
+  padding: 0.4rem;
   transition: all 0.3s ease;
 }
 
@@ -1117,7 +1120,6 @@ button.dropdown-button {
 .video-row > .review-card {
   flex: 0 0 auto; 
   max-width: 100%; 
-  /* min-width: 300px;  */
 }
 
 /* Optional: Snap items to the center */
@@ -1151,7 +1153,6 @@ button.dropdown-button {
   
   display: flex;
   gap: 20px;
-  /* min-width: 100%; */
   max-width: 100%;
   justify-content: flex-start;
 }
@@ -1161,11 +1162,11 @@ button.dropdown-button {
 .review-card {
   flex: 0 0 auto; 
   text-align: center;
-  max-width: 25rem; 
-  background: #fff;
+  width: 18rem; 
+  background: #fffdfb;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   border-radius: 10px; 
-  padding: 1.5rem;
+  padding: 1rem;
   justify-content: space-between;
   display: flex;
   flex-direction: column;
@@ -1180,22 +1181,31 @@ button.dropdown-button {
 
 .review-card:hover {
   transform: scale(1.05);
+  border-bottom: #36256a 2px solid;
+
 }
 
 .review-text {
+
+  align-self: center;;
+  padding: 0;
+  font-style: italic;
+  margin: 0;
   font-size: 1rem;
-  color: #333;
+  font-weight: 550;
+  color: var(--primary-color-darker);
 }
 
 .review-profile {
   display: flex;
   align-items: center;
-  margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .review-profile img {
-  width: 50px;
-  height: 50px;
+  width: 3rem;
+  border: #eb9400 1px solid;
+  height: 3rem;
   border-radius: 50%;
   margin-right: 10px;
 }
@@ -1205,20 +1215,45 @@ button.dropdown-button {
 }
 
 .review-profile-name {
+  color: var(--secondary-color-darker);
   text-align: left;
-  font-weight: bold;
+  font-size: 1.2rem;
+  font-weight: 800;
   margin: 0.3rem 0;
 
 }
 
+q::before {
+  font-style: italic;
+  color: var(--secondary-color);
+  margin: 0;
+  padding: 0;
+  vertical-align: bottom; 
+  position: relative;
+  top: 1.35rem;
+  content: '“'; 
+  font-size: 4rem;
+}
+
+q::after {
+  color: var(--secondary-color);
+
+  font-style: italic;
+  vertical-align: top; 
+  position: relative;
+  bottom: -0.1rem;
+  content: '”'; 
+  font-size: 4rem;
+}
 .review-profile-designation {
   text-align: left;
   margin: 0;
-  color: #888;
+  color: var(--secondary-color-darker);
 }
 
 .audio-review,
 .video-review {
+  padding-top: 1rem;
   justify-content: space-between;
   display: flex;
   flex-direction: column;

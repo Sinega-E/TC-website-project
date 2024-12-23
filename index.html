@@ -17,7 +17,7 @@
     href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
   <link rel='stylesheet'
     href='https://cdn-uicons.flaticon.com/2.6.0/uicons-solid-straight/css/uicons-solid-straight.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
 
   <script defer src="script.js"></script>
   <title>Talky Community</title>
@@ -47,16 +47,18 @@
       <button class="hamburger-btn menu-burger-close" id="menu-close-btn" aria-label="Toggle Header Menu">
         <i class="fi fi-br-cross-small menu-burger-close-icon"></i>
       </button>
-        <nav>
+      <nav>
         <ul>
           <li><a class="head-link ham-menu-link" href="#courses" aria-label="View Our Courses">Courses</a></li>
-          <li><a class="head-link ham-menu-link" href="#trainers" aria-label="Learn About Our Trainers">Trainers</a></li>
-          <li><a class="head-link ham-menu-link" href="#registration" aria-label="Student and Trainer Registration">Registration</a></li>
+          <li><a class="head-link ham-menu-link" href="#trainers" aria-label="Learn About Our Trainers">Trainers</a>
+          </li>
+          <li><a class="head-link ham-menu-link" href="#registration"
+              aria-label="Student and Trainer Registration">Registration</a></li>
           <li><a class="head-link ham-menu-link" href="#reviews" aria-label="Read Reviews">Reviews</a></li>
         </ul>
-      <div class="login-container">
-        <button class="btn login-btn ham-menu-link" aria-label="Log In to Your Account">Log In</button>
-      </div>
+        <div class="login-container">
+          <button class="btn login-btn ham-menu-link" aria-label="Log In to Your Account">Log In</button>
+        </div>
     </div>
     <!-- Menu for smaller screens -->
     <button class="hamburger-btn  menu-burger-open" id="menu-open-btn" aria-label="Toggle Header Menu">
@@ -111,14 +113,14 @@
   <!-- NAVIGATION THROUGH PAGE -->
   <div class="nav-links">
     <ul class="grid-container-nav-link">
-      
-          <li><a href="#registration" class="nav-link nav-link-3"><i class="nav-icon fi fi-ss-form"></i>Go to Registration
-            Section</a></li>
+
+      <li><a href="#registration" class="nav-link nav-link-3"><i class="nav-icon fi fi-ss-form"></i>Go to Registration
+          Section</a></li>
       <li><a href="#trainers" class="nav-link nav-link-2"><i class="nav-icon fi fi-ss-chalkboard-user"></i>Go to
           Trainers Section</a></li>
-          <li><a href="#faqs" class="nav-link nav-link-3"><i class="nav-icon fi fi-ss-form"></i>Go to FAQs
-            Section</a></li>
-      
+      <li><a href="#faqs" class="nav-link nav-link-3"><i class="nav-icon fi fi-ss-form"></i>Go to FAQs
+          Section</a></li>
+
       <li><a href="#reviews" class="nav-link nav-link-4"><i class="nav-icon fi fi-ss-feedback-review"></i>Go to Reviews
           Section</a></li>
     </ul>
@@ -321,10 +323,11 @@
     <div class="container stu-reg-container">
       <div class="registration">
         <div class="register-btn">
-          <button class="stu-register-btn">Student Registration Form</button><button class="trainer-register-btn">Trainer Registration Form</button>
+          <button class="stu-register-btn">Student Registration Form</button><button
+            class="trainer-register-btn">Trainer Registration Form</button>
         </div>
         <h2 class="registration-type">Student Registration</h2>
-        
+
         <form action="#" method="post">
           <small>* Required fields</small>
           <!-- Personal Information -->
@@ -374,33 +377,28 @@
             <label for="startDate">Preferred Start Date And Time *</label>
             <input type="datetime-local" id="startDate" name="startDate" required>
           </div>
-      
+
           <!-- Consent -->
           <div class="form-group">
             <label><input type="checkbox" required> I agree to receive course-related updates via Call/Email/SMS
             </label>
           </div>
-      
- 
-      
           <div class="form-group">
             <!-- Submit Button -->
             <button class="registration-btn" type="submit">Register Now</button>
           </div>
-       
         </form>
-
       </div>
-
     </div>
     <!-- ------------------------------------------------------------------- -->
     <div class="container trainer-reg-container">
       <div class="registration">
         <div class="register-btn">
-          <button class="stu-register-btn">Student Registration Form</button><button class="trainer-register-btn">Trainer Registration Form</button>
+          <button class="stu-register-btn">Student Registration Form</button><button
+            class="trainer-register-btn">Trainer Registration Form</button>
         </div>
         <h2 class="registration-type">Trainer Registration</h2>
-        
+
         <form action="#" method="POST" enctype="multipart/form-data">
           <small class="required-text">* Required fields</small>
           <!-- Personal Information -->
@@ -428,7 +426,7 @@
             <label for="photo">Upload Photo *</label>
             <input type="file" id="photo" name="photo" accept="image/*" required>
           </div>
-        
+
           <div class="form-group">
             <label for="contact">Phone Number *</label>
             <input type="tel" id="contact" name="contact" placeholder="Enter phone number" required>
@@ -450,14 +448,14 @@
           <div class="form-group">
             <label for="qualification">Qualification *</label>
             <select id="qualification" name="qualification" required>
-                <option value="">Select Qualification</option>
-                <option value="Bachelors in Physical Education">Bachelors in Physical Education</option>
-                <option value="Masters in Physical Education">Masters in Physical Education</option>
-                <option value="Certified Yoga Instructor">Certified Yoga Instructor</option>
-                <option value="Certified Fitness Trainer">Certified Fitness Trainer</option>
-                <option value="Nutrition and Wellness Certification">Nutrition and Wellness Certification</option>
-                <option value="Coding Bootcamp Graduate">Coding Bootcamp Graduate</option>
-                <option value="Teaching Certification">Teaching Certification</option>
+              <option value="">Select Qualification</option>
+              <option value="Bachelors in Physical Education">Bachelors in Physical Education</option>
+              <option value="Masters in Physical Education">Masters in Physical Education</option>
+              <option value="Certified Yoga Instructor">Certified Yoga Instructor</option>
+              <option value="Certified Fitness Trainer">Certified Fitness Trainer</option>
+              <option value="Nutrition and Wellness Certification">Nutrition and Wellness Certification</option>
+              <option value="Coding Bootcamp Graduate">Coding Bootcamp Graduate</option>
+              <option value="Teaching Certification">Teaching Certification</option>
             </select>
           </div>
 
@@ -472,8 +470,9 @@
               <button class="dropdown-button">Select Courses</button>
               <div class="dropdown-content">
                 <!-- Search Input -->
-                <input type="text" id="courseSearch" class="search-input" placeholder="Search courses..." onkeyup="filterCourses()">
-                
+                <input type="text" id="courseSearch" class="search-input" placeholder="Search courses..."
+                  onkeyup="filterCourses()">
+
                 <!-- Checkbox List -->
                 <label><input type="checkbox" name="courses" value="Yoga"> Yoga</label>
                 <label><input type="checkbox" name="courses" value="Fitness Training"> Fitness Training</label>
@@ -485,26 +484,26 @@
               </div>
             </div>
           </div>
-        
+
           <div class="form-group">
             <label for="headline">Profile Headline/Tagline *</label>
             <input type="text" id="headline" name="headline" placeholder="E.g., Certified Yoga Instructor" required>
           </div>
-          
 
-           <!-- Availability & Teaching Details -->
-            <div class="radio-group">
-              <label>Preferred Work Type *</label>
-              <input type="radio" id="fullTime" name="workType" value="Full-Time" required>
-              <label for="fullTime" style="font-weight: normal;">Full-Time</label>
-              <input type="radio" id="partTime" name="workType" value="Part-Time" required>
 
-              <label for="partTime" style="font-weight: normal;">Part-Time</label>
-            </div>
+          <!-- Availability & Teaching Details -->
+          <div class="radio-group">
+            <label>Preferred Work Type *</label>
+            <input type="radio" id="fullTime" name="workType" value="Full-Time" required>
+            <label for="fullTime" style="font-weight: normal;">Full-Time</label>
+            <input type="radio" id="partTime" name="workType" value="Part-Time" required>
 
-       
-            <!-- Availability & Teaching Details -->
-            <div class="form-group">
+            <label for="partTime" style="font-weight: normal;">Part-Time</label>
+          </div>
+
+
+          <!-- Availability & Teaching Details -->
+          <div class="form-group">
             <label for="teachingMode">Preferred Mode of Teaching *</label>
             <select id="teachingMode" name="teachingMode" required>
               <option value="">Select Teaching Mode</option>
@@ -640,35 +639,47 @@
         <div class="accordion-item">
           <button class="accordion-header" onclick="toggleAccordion(this)">
             <span>How long will it take to become fluent?</span>
-            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
+              stroke-width="2" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
             </svg>
           </button>
           <div class="accordion-content">
-            <p>The time required to achieve fluency depends on your current English proficiency and the effort you invest. Rather than setting a rigid timeframe, it's better to focus on consistent practice without pressuring yourself. We provide 100% support to enhance your communication skills, but your dedication and consistency are crucial. With regular practice, you can see significant improvement within a few months.</p>
+            <p>The time required to achieve fluency depends on your current English proficiency and the effort you
+              invest. Rather than setting a rigid timeframe, it's better to focus on consistent practice without
+              pressuring yourself. We provide 100% support to enhance your communication skills, but your dedication and
+              consistency are crucial. With regular practice, you can see significant improvement within a few months.
+            </p>
           </div>
         </div>
-        
+
         <div class="accordion-item">
           <button class="accordion-header" onclick="toggleAccordion(this)">
             <span>What is the difference between WhatsApp voice chat and Zoom batch classes?</span>
-            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
+              stroke-width="2" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
             </svg>
           </button>
           <div class="accordion-content">
             <p>
-              <b>WhatsApp Voice Chat:</b> In WhatsApp voice chats, you will work one-on-one with a personal trainer for an hour. This method is tailored for basic-level students who need more time to form sentences. It allows you to think, speak, and identify mistakes at your own pace, helping you build confidence and improve conversational skills gradually.
+              <b>WhatsApp Voice Chat:</b> In WhatsApp voice chats, you will work one-on-one with a personal trainer for
+              an hour. This method is tailored for basic-level students who need more time to form sentences. It allows
+              you to think, speak, and identify mistakes at your own pace, helping you build confidence and improve
+              conversational skills gradually.
               <br><br>
-              <b>Zoom Batch Classes:</b> Zoom batch classes consist of up to 5 students per session, led by a personal trainer. These sessions encourage interaction among participants, providing opportunities to practice speaking skills in a group setting and learn collaboratively.
+              <b>Zoom Batch Classes:</b> Zoom batch classes consist of up to 5 students per session, led by a personal
+              trainer. These sessions encourage interaction among participants, providing opportunities to practice
+              speaking skills in a group setting and learn collaboratively.
             </p>
           </div>
         </div>
-        
+
         <div class="accordion-item">
           <button class="accordion-header" onclick="toggleAccordion(this)">
             <span>Will the class be compensated if the trainer or student is absent?</span>
-            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
+              stroke-width="2" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
             </svg>
           </button>
@@ -676,11 +687,12 @@
             <p>For all package courses, except batch classes, any missed session will be compensated by the trainer.</p>
           </div>
         </div>
-        
+
         <div class="accordion-item">
           <button class="accordion-header" onclick="toggleAccordion(this)">
             <span>If I am unable to continue my class after a week of payment, can I get a refund?</span>
-            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
+              stroke-width="2" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
             </svg>
           </button>
@@ -688,270 +700,288 @@
             <p>Yes, you are eligible for a refund. We will deduct only the fee for the week of classes you attended.</p>
           </div>
         </div>
-        
+
         <div class="accordion-item">
           <button class="accordion-header" onclick="toggleAccordion(this)">
             <span>Can I take a demo before making the payment?</span>
-            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
+              stroke-width="2" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
             </svg>
           </button>
           <div class="accordion-content">
-            <p>Absolutely! A demo class will be scheduled at your convenience. After attending the session, you can decide whether to proceed with the payment.</p>
+            <p>Absolutely! A demo class will be scheduled at your convenience. After attending the session, you can
+              decide whether to proceed with the payment.</p>
           </div>
         </div>
-        
+
         <div class="accordion-item">
           <button class="accordion-header" onclick="toggleAccordion(this)">
             <span>Do you teach grammar every day?</span>
-            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
+              stroke-width="2" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
             </svg>
           </button>
           <div class="accordion-content">
-            <p>Our primary focus is on improving speaking skills, as speaking is essential for mastering English communication. While grammar is important, teaching it daily might feel overwhelming and reminiscent of traditional school lessons. Instead, we create a friendly, engaging environment with conversations and activities. Grammar is incorporated based on the student’s needs and preferences, ensuring the learning process remains enjoyable.</p>
+            <p>Our primary focus is on improving speaking skills, as speaking is essential for mastering English
+              communication. While grammar is important, teaching it daily might feel overwhelming and reminiscent of
+              traditional school lessons. Instead, we create a friendly, engaging environment with conversations and
+              activities. Grammar is incorporated based on the student’s needs and preferences, ensuring the learning
+              process remains enjoyable.</p>
           </div>
         </div>
-        
+
         <div class="accordion-item">
           <button class="accordion-header" onclick="toggleAccordion(this)">
             <span>I feel nervous. Will the trainers be soft-spoken?</span>
-            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 24 24"
+              stroke-width="2" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
             </svg>
           </button>
           <div class="accordion-content">
-            <p>Our trainers are selected for their kindness, patience, and soft-spoken nature. They are trained to create a friendly and comfortable environment for you. If you ever feel uneasy, you can contact our community directly, and we will take prompt action to address your concerns. Your comfort and satisfaction are our top priorities.</p>
+            <p>Our trainers are selected for their kindness, patience, and soft-spoken nature. They are trained to
+              create a friendly and comfortable environment for you. If you ever feel uneasy, you can contact our
+              community directly, and we will take prompt action to address your concerns. Your comfort and satisfaction
+              are our top priorities.</p>
           </div>
         </div>
-      </div> 
+      </div>
     </div>
   </section>
 
-<!-- Review Section -->
-<section id="reviews" class="reviews">
-  <div class="container review-container">
-    <div class="heading-container">
-      <h2 class="section-headings">Student Voices & Experiences</h2>
-      <p class="tagline">Feedback From Our Community - Real Stories, Real Results</p>
-    </div>
-
-    <!-- first Row: Audio Reviews -->
-    <div class="review-row audio-row">
-      <!-- Audio Review 1 -->
-      <div class="review-card">
-        <div class="audio-review">
-          <audio controls>
-            <source src="audio1.mp3" type="audio/mp3">
-            Your browser does not support the audio element.
-          </audio>
-          <div class="review-profile">
-            <img src="assets\men-dp.png" alt="Profile image">
-            <div class="review-profile-name-designation">
-              <p class="review-profile-name">Alex</p>
-              <p class="review-profile-designation">Student</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Audio Review 2 -->
-      <div class="review-card">
-        <div class="audio-review">
-          <audio controls>
-            <source src="audio2.mp3" type="audio/mp3">
-            Your browser does not support the audio element.
-          </audio>
-          <div class="review-profile">
-            <img src="assets\men-dp.png" alt="Profile image">
-            <div class="review-profile-name-designation">
-              <p class="review-profile-name">Maya</p>
-              <p class="review-profile-designation">Student</p>
-            </div>
-          </div>
-        </div>
+  <!-- Review Section -->
+  <section id="reviews" class="reviews">
+    <div class="container review-container">
+      <div class="heading-container">
+        <h2 class="section-headings">Student Voices & Experiences</h2>
+        <p class="tagline">Feedback From Our Community - Real Stories, Real Results</p>
       </div>
 
-      <!-- Audio Review 3 -->
-      <div class="review-card">
-        <div class="audio-review">
-          <audio controls>
-            <source src="audio3.mp3" type="audio/mp3">
-            Your browser does not support the audio element.
-          </audio>
-          <div class="review-profile">
-            <img src="assets\men-dp.png" alt="Profile image">
-            <div class="review-profile-name-designation">
-              <p class="review-profile-name">James</p>
-              <p class="review-profile-designation">Student</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-           <!-- Audio Review 4 -->
-           <div class="review-card">
-            <div class="audio-review">
-              <audio controls>
-                <source src="audio3.mp3" type="audio/mp3">
-                Your browser does not support the audio element.
-              </audio>
-              <div class="review-profile">
-                <img src="assets\men-dp.png" alt="Profile image">
-                <div class="review-profile-name-designation">
-                  <p class="review-profile-name">James</p>
-                  <p class="review-profile-designation">Student</p>
-                </div>
+      <!-- first Row: Audio Reviews -->
+      <div class="review-row audio-row">
+        <!-- Audio Review 1 -->
+        <div class="review-card">
+          <div class="audio-review">
+            <audio controls>
+              <source src="audio1.mp3" type="audio/mp3">
+              Your browser does not support the audio element.
+            </audio>
+            <div class="review-profile">
+              <img src="assets\men-dp.png" alt="Profile image">
+              <div class="review-profile-name-designation">
+                <p class="review-profile-name">Alex</p>
+                <p class="review-profile-designation">Student</p>
               </div>
             </div>
           </div>
-    </div>
+        </div>
 
-  
-      <p class="tagline-review">What Our Students Say</p>
-  
-    
-    <!-- second Row: Carousel for Text Reviews -->
-    <div class="review-row carousel-row">
-      <div class="review-carousel">
-        <!-- Text Review Card 1 -->
+        <!-- Audio Review 2 -->
         <div class="review-card">
-          <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nihil libero magni excepturi commodi aperiam unde adipisci? Delectus perspiciatis temporibus error, doloribus dolorem eligendi animi. Alias autem ullam excepturi veniam!</p>
-          <div class="review-profile">
-            <img src="assets\men-dp.png" alt="Profile image">
-            <div class="review-profile-name-designation">
-              <p class="review-profile-name">Priya</p>
-              <p class="review-profile-designation">Student</p>
+          <div class="audio-review">
+            <audio controls>
+              <source src="audio2.mp3" type="audio/mp3">
+              Your browser does not support the audio element.
+            </audio>
+            <div class="review-profile">
+              <img src="assets\men-dp.png" alt="Profile image">
+              <div class="review-profile-name-designation">
+                <p class="review-profile-name">Maya</p>
+                <p class="review-profile-designation">Student</p>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Text Review Card 2 -->
+        <!-- Audio Review 3 -->
         <div class="review-card">
-          <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nihil libero magni excepturi commodi aperiam unde adipisci? Delectus perspiciatis temporibus error, doloribus dolorem eligendi animi. Alias autem ullam excepturi veniam!</p>
-          <div class="review-profile">
-            <img src="assets\men-dp.png" alt="Profile image">
-            <div class="review-profile-name-designation">
-              <p class="review-profile-name">John</p>
-              <p class="review-profile-designation">Student</p>
+          <div class="audio-review">
+            <audio controls>
+              <source src="audio3.mp3" type="audio/mp3">
+              Your browser does not support the audio element.
+            </audio>
+            <div class="review-profile">
+              <img src="assets\men-dp.png" alt="Profile image">
+              <div class="review-profile-name-designation">
+                <p class="review-profile-name">James</p>
+                <p class="review-profile-designation">Student</p>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Text Review Card 3 -->
+        <!-- Audio Review 4 -->
         <div class="review-card">
-          <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nihil libero magni excepturi commodi aperiam unde adipisci? Delectus perspiciatis temporibus error, doloribus dolorem eligendi animi. Alias autem ullam excepturi veniam!</p>
-          <div class="review-profile">
-            <img src="assets\men-dp.png" alt="Profile image">
-            <div class="review-profile-name-designation">
-              <p class="review-profile-name">Sara</p>
-              <p class="review-profile-designation">Student</p>
-            </div>
-          </div>
-        </div>
-
-         <!-- Text Review Card 4 -->
-         <div class="review-card">
-          <p class="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nihil libero magni excepturi commodi aperiam unde adipisci? Delectus perspiciatis temporibus error, doloribus dolorem eligendi animi. Alias autem ullam excepturi veniam!</p>
-          <div class="review-profile">
-            <img src="assets\men-dp.png" alt="Profile image">
-            <div class="review-profile-name-designation">
-              <p class="review-profile-name">Sara</p>
-              <p class="review-profile-designation">Student</p>
+          <div class="audio-review">
+            <audio controls>
+              <source src="audio3.mp3" type="audio/mp3">
+              Your browser does not support the audio element.
+            </audio>
+            <div class="review-profile">
+              <img src="assets\men-dp.png" alt="Profile image">
+              <div class="review-profile-name-designation">
+                <p class="review-profile-name">James</p>
+                <p class="review-profile-designation">Student</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+
+
+      <p class="tagline-review">What Our Students Say</p>
+
+
+      <!-- second Row: Carousel for Text Reviews -->
+      <div class="review-row carousel-row">
+        <div class="review-carousel">
+          <!-- Text Review Card 1 -->
+          <div class="review-card">
+            <p class="review-text"><q>Lorem m ipsum dolor sit amet consectetur adipisicing elit. Deserunt nihil libero magni
+              excepturi commodi aperiam unde adipisci? Delectus perspiciatis temporibus error, doloribus dolorem
+              eligendi animi. Alias auteunde adipisci? Delectus perspiciatis temporibus error, doloribus dolorem
+              eligendi animi. Alias autem ullam excepturi veniam!</q></p>
+            <div class="review-profile">
+              <img src="assets\men-dp.png" alt="Profile image">
+              <div class="review-profile-name-designation">
+                <p class="review-profile-name">Priya</p>
+                <p class="review-profile-designation">Student</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Text Review Card 2 -->
+          <div class="review-card">
+            <p class="review-text"><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nihil libero magni
+              excepturi commodi aperiam unde adipisci? Delectus perspiciatis temporibus error, doloribus dolorem
+              eligendi animi. Alias autem ullam excepturi veniam!</q></p>
+            <div class="review-profile">
+              <img src="assets\men-dp.png" alt="Profile image">
+              <div class="review-profile-name-designation">
+                <p class="review-profile-name">John</p>
+                <p class="review-profile-designation">Student</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Text Review Card 3 -->
+          <div class="review-card">
+            <p class="review-text"><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nihil libero magni
+              excepturi commodi aperiam unde adipisci? Delectus perspiciatis temporibus error, doloribus dolorem
+              eligendi animi. Alias autem ullam excepturi veniam!</q></p>
+            <div class="review-profile">
+              <img src="assets\men-dp.png" alt="Profile image">
+              <div class="review-profile-name-designation">
+                <p class="review-profile-name">Sara</p>
+                <p class="review-profile-designation">Student</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Text Review Card 4 -->
+          <div class="review-card">
+            <p class="review-text"><q>Lorem sci? Delectus perspiciatis temporibus error, doloribus dolorem
+              eligendi animi. Alias autem ullam excepturi veniam!</q></p>
+            <div class="review-profile">
+              <img src="assets\men-dp.png" alt="Profile image">
+              <div class="review-profile-name-designation">
+                <p class="review-profile-name">Sara</p>
+                <p class="review-profile-designation">Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
       <p class="tagline-review">In Their Own Words</p>
 
 
-    <!-- Third Row: Video Reviews -->
-    <div class="review-row video-row">
-      <!-- Video Review 1 -->
-      <div class="review-card">
-        <div class="video-review">
-          <video controls>
-            <source src="video1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <div class="review-profile">
-            <img src="assets\men-dp.png" alt="Profile image">
-            <div class="review-profile-name-designation">
-              <p class="review-profile-name">Eva</p>
-              <p class="review-profile-designation">Student</p>
+      <!-- Third Row: Video Reviews -->
+      <div class="review-row video-row">
+        <!-- Video Review 1 -->
+        <div class="review-card">
+          <div class="video-review">
+            <video controls>
+              <source src="video1.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="review-profile">
+              <img src="assets\men-dp.png" alt="Profile image">
+              <div class="review-profile-name-designation">
+                <p class="review-profile-name">Eva</p>
+                <p class="review-profile-designation">Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Review 2 -->
+        <div class="review-card">
+          <div class="video-review">
+            <video controls>
+              <source src="video2.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="review-profile">
+              <img src="assets\men-dp.png" alt="Profile image">
+              <div class="review-profile-name-designation">
+                <p class="review-profile-name">Liam</p>
+                <p class="review-profile-designation">Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Review 3 -->
+        <div class="review-card">
+          <div class="video-review">
+            <video controls>
+              <source src="video3.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="review-profile">
+              <img src="assets\men-dp.png" alt="Profile image">
+              <div class="review-profile-name-designation">
+                <p class="review-profile-name">Oliver</p>
+                <p class="review-profile-designation">Student</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Video Review 4 -->
+        <div class="review-card">
+          <div class="video-review">
+            <video controls>
+              <source src="video3.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <div class="review-profile">
+              <img src="assets\men-dp.png" alt="Profile image">
+              <div class="review-profile-name-designation">
+                <p class="review-profile-name">Oliver</p>
+                <p class="review-profile-designation">Student</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Video Review 2 -->
-      <div class="review-card">
-        <div class="video-review">
-          <video controls>
-            <source src="video2.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <div class="review-profile">
-            <img src="assets\men-dp.png" alt="Profile image">
-            <div class="review-profile-name-designation">
-              <p class="review-profile-name">Liam</p>
-              <p class="review-profile-designation">Student</p>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <!-- Video Review 3 -->
-      <div class="review-card">
-        <div class="video-review">
-          <video controls>
-            <source src="video3.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <div class="review-profile">
-            <img src="assets\men-dp.png" alt="Profile image">
-            <div class="review-profile-name-designation">
-              <p class="review-profile-name">Oliver</p>
-              <p class="review-profile-designation">Student</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-       <!-- Video Review 4 -->
-       <div class="review-card">
-        <div class="video-review">
-          <video controls>
-            <source src="video3.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-          <div class="review-profile">
-            <img src="assets\men-dp.png" alt="Profile image">
-            <div class="review-profile-name-designation">
-              <p class="review-profile-name">Oliver</p>
-              <p class="review-profile-designation">Student</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <!-- Add Review Button -->
+      <a href="#" class="add-review">Add Review</a>
     </div>
-
-
-    <!-- Add Review Button -->
-    <a href="#" class="add-review">Add Review</a>
-  </div>
-</section>
+  </section>
 
 
   <!-- Footer -->
   <footer class="footer">
-      <p>About Us | Contact Us | Privacy Policy</p>
+    <p>About Us | Contact Us | Privacy Policy</p>
     </div>
   </footer>
 
 </body>
-
 </html>

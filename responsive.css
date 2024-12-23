@@ -42,12 +42,12 @@
 
   .review-card {
     max-width: 100%;
-    flex: 0 0 48%; 
+    flex: 0 0 48%;
   }
   audio {
     width: 280px;
     height: 52px;
-}
+  }
 }
 @media screen and (max-width: 1050px) {
   /* HEADER */
@@ -92,9 +92,23 @@
     max-width: 18rem;
     padding: 0.9rem;
   }
+  /* Accordion */
+  .accordion {
+    max-width: 50rem;
+    margin: 1.5rem auto;
+  }
+
+  .accordion-header {
+    font-size: 16px;
+    padding: 1.2rem 1rem;
+  }
+
+  .accordion-content p {
+    padding: 0 15px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
   /* reviews section */
-
-
 }
 @media screen and (max-width: 768px) {
   /* HEADER */
@@ -183,7 +197,7 @@
     font-size: 0.85rem;
   }
   /* registration forms */
-  
+
   .registration-type {
     font-size: 1.6rem;
   }
@@ -228,51 +242,68 @@
     margin: 5px;
   }
 
-/* Consent Section Adjustments */
-.form-group label[for="agreement"] {
-  font-size: 14px;
-  line-height: 1.6;
-  padding: 8px 0;
-}
-/* reviews */
-.review-row {
-  gap: 1.1rem;
-}
+  /* Consent Section Adjustments */
+  .form-group label[for="agreement"] {
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 8px 0;
+  }
+  /* reviews */
+  .review-row {
+    gap: 1.1rem;
+  }
 
-.review-card {
-  max-width: 100%;
-  flex: 0 0 100%;
-}
+  .review-card {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
 
-.carousel-row,
-.audio-row,
-.video-row {
-  padding-bottom: 1rem;
-  overflow-x: visible;
-}
+  .carousel-row,
+  .audio-row,
+  .video-row {
+    padding-bottom: 1rem;
+    overflow-x: visible;
+  }
 
-.review-carousel {
-  gap: 0.8rem;
-}
+  .review-carousel {
+    gap: 0.8rem;
+  }
 
-.add-review {
-  width: 100%; 
-  text-align: center;
-}
+  .add-review {
+    width: 100%;
+    text-align: center;
+  }
 
-.review-profile img {
-  width: 30px;
-  height: 30px;
-}
+  .review-profile img {
+    width: 30px;
+    height: 30px;
+  }
 
-.review-profile-name-designation {
-  font-size: 0.8rem; 
-}
-audio {
-  width: 260px;
-  height: 47px;
-}
+  .review-profile-name-designation {
+    font-size: 0.8rem;
+  }
+  audio {
+    width: 260px;
+    height: 47px;
+  }
 
+  /* accordion */
+
+  .accordion {
+    max-width: 40rem;
+    margin: 1rem auto;
+  }
+
+  .accordion-header {
+    font-size: 14px;
+    padding: 1rem 1rem;
+  }
+
+  .accordion-content p {
+    padding: 0 12px;
+    font-size: 13px;
+    line-height: 1.5;
+  }
 }
 
 @media (max-width: 700px) {
@@ -309,10 +340,6 @@ audio {
   }
 
   /* registration forms */
-  /* .registration {
-    padding: 15px;
-  } */
-
   .registration-type {
     font-size: 1.4rem;
     text-align: center;
@@ -343,7 +370,7 @@ audio {
     font-size: 12px;
   }
 
-small {
+  small {
     font-size: 10px;
     line-height: 1.2rem;
   }
@@ -365,12 +392,6 @@ small {
     line-height: 1.5;
     padding: 6px 0;
   }
-
-    /* reviews */
-  
-  
-
-  
 }
 @media (max-width: 580px) {
   /* HEADER */
@@ -409,10 +430,30 @@ small {
     font-size: 1rem;
     padding: 0.3rem;
   }
-  /* reviews section */
-  
 
+  /* accordion */
+  .accordion {
+    max-width: 90%;
+    margin: 1rem auto;
+  }
+
+  .accordion-header {
+    line-height: 1rem;
+    font-size: 13px;
+    padding: 0.8rem 0.8rem;
+  }
+
+  .accordion-header .icon {
+    width: 10%;
+  }
+
+  .accordion-content p {
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
 }
+
 @media screen and (max-width: 480px) {
   /* HEADER */
   .login-btn {
@@ -559,8 +600,7 @@ small {
     margin: 3px;
   }
   .radio-group input[type="radio"] {
-    margin: -30px; 
-
+    margin: -30px;
   }
   /* Consent Section Adjustments */
   .form-group label[for="agreement"] {
@@ -569,9 +609,9 @@ small {
     padding: 5px 0;
   }
 
-/* review section */
+  /* review section */
   .review-card {
-    padding: 1rem; 
+    padding:0 1rem;
   }
 
   .review-profile-name-designation {
@@ -579,7 +619,7 @@ small {
   }
 
   .review-profile-name {
-    font-size: 1rem; 
+    font-size: 1rem;
   }
 
   .review-profile-designation {
@@ -587,13 +627,15 @@ small {
   }
 
   .review-text {
-    font-size: 0.9rem; 
+    font-size: 0.9rem;
   }
   audio {
     width: 200px;
     height: 35px;
-}
-
+  }
+  .accordion-header {
+    font-size: 12px;
+  }
 }
 @media (max-width: 460px) {
   /* Slider Styles */
@@ -633,13 +675,12 @@ small {
   }
 
   .accordion-header {
-    font-size: 14px;
-    padding: 1rem 0.8rem;
+    font-size: 11px;
+    padding: 0.6rem 0.8rem;
   }
-
   .accordion-header .icon {
-    width: 16px;
-    height: 16px;
+    width: 15%;
+    padding: 0.1rem;
   }
 
   .accordion-content p {
@@ -781,7 +822,7 @@ small {
   }
 
   .radio-group input[type="radio"] {
-    margin-right: -30px; 
+    margin-right: -30px;
   }
 
   /* Consent Section Adjustments */
@@ -790,7 +831,6 @@ small {
     line-height: 1.3;
     padding: 4px 0;
   }
-
 }
 
 @media (max-width: 320px) {
@@ -889,69 +929,3 @@ small {
 }
 
 /* ----------- */
-
-
-/* Media Queries for Responsiveness */
-
-/* FAQs Section Responsive Styling */
-@media screen and (max-width: 1024px) {
-  .accordion {
-    max-width: 50rem;
-    margin: 1.5rem auto;
-  }
-
-  .accordion-header {
-    font-size: 16px;
-    padding: 1.5rem 1.2rem;
-  }
-
-  .accordion-content p{
-    padding: 0 15px;
-    font-size: 14px;
-    line-height: 1.6;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .accordion {
-    max-width: 40rem;
-    margin: 1rem auto;
-  }
-
-  .accordion-header {
-    font-size: 14px;
-    padding: 1.2rem 1rem;
-  }
-
-  .accordion-content p{
-    padding: 0 12px;
-    font-size: 13px;
-    line-height: 1.5;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .accordion {
-    max-width: 90%;
-    margin: 1rem auto;
-  }
-
-  .accordion-header {
-    font-size: 16px;
-    padding: 1rem 0.8rem;
-  }
-
-  .accordion-header .icon {
-    width: 16px;
-    height: 16px;
-  }
-
-  .accordion-content p {
-    padding: 0 10px;
-    font-size: 14px;
-    line-height: 1.6;
-  }
-}
-
-
-
