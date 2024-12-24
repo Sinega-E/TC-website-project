@@ -384,6 +384,8 @@ input, textarea, select {
   margin: 0;
   text-align: center;
   padding-top: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
   padding-bottom: 1rem;
   font-size: 1.2rem;
   font-weight: 550;

@@ -17,7 +17,7 @@ document.getElementById("menu-open-btn").addEventListener("click", function () {
 
 document.getElementById("menu-close-btn").addEventListener("click",function(){
   menu.classList.remove("open");
-  menuButtonIconOpen.style.display = "block"; 
+  menuButtonIconOpen.style.display = ""; 
 });
 
 // Iterate through all "ham-menu-link" elements and add the event listener
