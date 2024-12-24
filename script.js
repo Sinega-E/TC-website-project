@@ -1,12 +1,42 @@
+// Modal window
+// Get elements
+const loginBtn = document.getElementById("loginBtn");
+const hamLoginBtn = document.getElementById("ham-loginBtn")
+const loginModal = document.getElementById("loginModal");
+const closeModal = document.querySelector(".close");
+
 const hamLinks = document.getElementsByClassName("ham-menu-link");
 const menu = document.getElementById("menu");
+const menuOpen = document.getElementById(".menu.open ")
 const menuButtonIconOpen = document.querySelector(".menu-burger-open");
 const menuButtonIconClose = document.querySelector(".menu-burger-close");
-
-
-
 const childSliders = document.querySelectorAll(".child-slide");
 const dotContainer = document.querySelector(".dots");
+
+// Open modal on button click
+loginBtn.addEventListener("click", () => {
+  loginModal.style.display = "flex";
+});
+
+// Close modal on close button click
+closeModal.addEventListener("click", () => {
+  loginModal.style.display = "none";
+});
+
+
+// Open modal on button click
+hamLoginBtn.addEventListener("click", () => {
+  loginModal.style.display = "flex";
+});
+
+
+// Close modal when clicking outside the modal content
+window.addEventListener("click", (event) => {
+  if (event.target === loginModal) {
+    loginModal.style.display = "none";
+  }
+});
+
 // ------------------------------------Toggle the side menu------------------------------------
 document.getElementById("menu-open-btn").addEventListener("click", function () {
   menu.classList.add("open");
@@ -19,6 +49,9 @@ document.getElementById("menu-close-btn").addEventListener("click",function(){
   menu.classList.remove("open");
   menuButtonIconOpen.style.display = ""; 
 });
+
+
+
 
 // Iterate through all "ham-menu-link" elements and add the event listener
 Array.from(hamLinks).forEach(link => {
