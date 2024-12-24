@@ -11,7 +11,7 @@ const dotContainer = document.querySelector(".dots");
 document.getElementById("menu-open-btn").addEventListener("click", function () {
   menu.classList.add("open");
   if(menu.classList.contains("open")){
-    menuButtonIconOpen.style.display="block"
+    menuButtonIconOpen.style.display="none"
   }
 });
 
@@ -24,7 +24,7 @@ document.getElementById("menu-close-btn").addEventListener("click",function(){
 Array.from(hamLinks).forEach(link => {
   link.addEventListener("click", function () {
     menu.classList.remove("open"); 
-    menuButtonIconOpen.style.display = "block"; 
+    menuButtonIconOpen.style.display = ""; 
     menuButtonIconClose.style.display = "block";
   });
 });
