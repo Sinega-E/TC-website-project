@@ -51,7 +51,12 @@ document.getElementById("menu-close-btn").addEventListener("click",function(){
 });
 
 
-
+window.addEventListener("click", (event) => {
+  if (!menu.contains(event.target) && !menuButtonIconOpen.contains(event.target)) {
+    menu.classList.remove("open");
+    menuButtonIconOpen.style.display = ""; 
+  }
+});
 
 // Iterate through all "ham-menu-link" elements and add the event listener
 Array.from(hamLinks).forEach(link => {
