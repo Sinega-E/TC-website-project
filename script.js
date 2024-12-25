@@ -16,11 +16,15 @@ const dotContainer = document.querySelector(".dots");
 // Open modal on button click
 loginBtn.addEventListener("click", () => {
   loginModal.style.display = "flex";
+  document.body.classList.add("no-scroll");
+
 });
 
 // Close modal on close button click
 closeModal.addEventListener("click", () => {
   loginModal.style.display = "none";
+  document.body.classList.remove("no-scroll");
+
 });
 
 
@@ -34,6 +38,8 @@ hamLoginBtn.addEventListener("click", () => {
 window.addEventListener("click", (event) => {
   if (event.target === loginModal) {
     loginModal.style.display = "none";
+    document.body.classList.remove("no-scroll");
+
   }
 });
 
@@ -42,12 +48,15 @@ document.getElementById("menu-open-btn").addEventListener("click", function () {
   menu.classList.add("open");
   if(menu.classList.contains("open")){
     menuButtonIconOpen.style.display="none"
+    document.body.classList.add("no-scroll");
   }
 });
 
 document.getElementById("menu-close-btn").addEventListener("click",function(){
   menu.classList.remove("open");
   menuButtonIconOpen.style.display = ""; 
+  document.body.classList.remove("no-scroll");
+
 });
 
 
@@ -55,6 +64,7 @@ window.addEventListener("click", (event) => {
   if (!menu.contains(event.target) && !menuButtonIconOpen.contains(event.target)) {
     menu.classList.remove("open");
     menuButtonIconOpen.style.display = ""; 
+    document.body.classList.remove("no-scroll");
   }
 });
 

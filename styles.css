@@ -39,6 +39,11 @@ body {
     color: var(--text-color);
     margin: 0;
 }
+
+body.no-scroll {
+  overflow: hidden;
+}
+
 p {
     font-family: "Quicksand", sans-serif; 
     color:#353535;
@@ -79,8 +84,7 @@ input, textarea, select {
 
 /* Container Header */
 .container-header {
-  
-  max-width: 100%;
+    max-width: 100%;
     gap: 2rem;
     display: flex;
     box-shadow: 0 0.2rem 0.5rem var(--shadow-color);
@@ -129,24 +133,41 @@ input, textarea, select {
   color: var(--secondary-color-darker);
 }
 
-.form-group {
-  margin-bottom: 15px;
+.form-group-modal {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-.form-group label {
+.form-group-modal label {
   display: block;
-  margin-bottom: 5px;
-  font-size: 14px;
-  color: #333;
+  flex: 1;
+  font-size: 16px;
+  color: var(--secondary-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
 }
 
-.form-group input,
-.form-group select {
+.form-group-modal input,
+.form-group-modal select {
   width: 100%;
-  padding: 8px;
-  font-size: 14px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+
+  flex: 1;
+  line-height: 1.3rem;
+  padding: 14px 20px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  line-height: 1.3rem;
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  background-color: #fafafa;
+  transition: all 0.3s ease-in-out;
+  outline: none;
 }
 
 .submit-btn {
