@@ -1,7 +1,7 @@
 // Modal window
 // Get elements
 const loginBtn = document.getElementById("loginBtn");
-const hamLoginBtn = document.getElementById("ham-loginBtn")
+const hamLoginBtn = document.getElementById("hamLoginBtn")
 const loginModal = document.getElementById("loginModal");
 const closeModal = document.querySelector(".close");
 
@@ -15,8 +15,8 @@ const dotContainer = document.querySelector(".dots");
 
 // Open modal on button click
 loginBtn.addEventListener("click", () => {
-  loginModal.style.display = "flex";
   document.body.classList.add("no-scroll");
+  loginModal.style.display = "flex";
 
 });
 
@@ -27,10 +27,12 @@ closeModal.addEventListener("click", () => {
 
 });
 
-
 // Open modal on button click
+
 hamLoginBtn.addEventListener("click", () => {
+  document.body.classList.add("no-scroll");
   loginModal.style.display = "flex";
+
 });
 
 
@@ -283,4 +285,39 @@ function toggleAccordion(button) {
     style.transform = 'rotate(45deg)';
   }
 }
+
+// review audio pause
+
+
+// Select all audio elements in the review section
+const audioElements = document.querySelectorAll(".audio-review audio");
+
+audioElements.forEach((audio) => {
+  audio.addEventListener("play", () => {
+    // Pause all other audio elements
+    audioElements.forEach((otherAudio) => {
+      if (otherAudio !== audio) {
+        otherAudio.pause();
+      }
+    });
+  });
+});
+
+// review video pause
+// Select all video elements in the review section
+const videoElements = document.querySelectorAll(".video-review video");
+
+videoElements.forEach((video) => {
+  video.addEventListener("play", () => {
+    // Pause all other video elements and manage controls
+    videoElements.forEach((otherVideo) => {
+      if (otherVideo !== video) {
+        otherVideo.pause(); // Pause other videos
+      }
+    });
+  });
+});
+
+
+
 
