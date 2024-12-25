@@ -4,7 +4,7 @@ const loginBtn = document.getElementById("loginBtn");
 const hamLoginBtn = document.getElementById("hamLoginBtn")
 const loginModal = document.getElementById("loginModal");
 const closeModal = document.querySelector(".close");
-
+const modal = document.querySelector(".modal")
 const hamLinks = document.getElementsByClassName("ham-menu-link");
 const menu = document.getElementById("menu");
 const menuOpen = document.getElementById(".menu.open ")
